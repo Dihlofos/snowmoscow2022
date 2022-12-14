@@ -46,6 +46,7 @@
   </head>
 
   <body>
+    <div class="cursor js-cursor"></div>
     <div style="overflow: hidden">
       <header
         class="header fromTop"
@@ -57,7 +58,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list js-nav">
             <li class="nav__item">
-              <a class="nav__link js-scroll" data-scroll href="#about"
+              <a class="nav__link js-scroll" data-scroll href="#info"
                 >О фестивале</a
               >
             </li>
@@ -112,13 +113,8 @@
                   <div class="hero__bg-announce">
                     <p> Сезон «Чудеса России»</p>
                   </div>
-                  <button class="hero__play js-video-play">
-                    <svg width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.5 28.2286V3.94251C1.5 2.71178 2.90044 2.00478 3.8907 2.7356L20.756 15.1822C21.5804 15.7906 21.5658 17.0281 20.7272 17.6168L3.86184 29.4563C2.86786 30.1541 1.5 29.443 1.5 28.2286Z" stroke="white" stroke-width="3"/>
-                    </svg>
-                  </button>
                 </div>
-                <video class="hero__video js-video-video" poster="img/hero-video-image.jpg" muted>
+                <video class="hero__video js-video-video" poster="img/hero-video-image.jpg" muted inline autoplay loop>
                   <source src="video/hero.mp4" type="video/mp4">
                 </video>
               </div>
@@ -157,8 +153,32 @@
       </header>
 
       <main style="overflow: hidden">
+        <section class="info" id="info">
+          <div class="container">
+            <img src="img/info-blues.svg" class="info__ornament  info__ornament--blues" width="1976" height="950" alt="орнамент" />
+            <img src="img/info-colors.svg" class="info__ornament info__ornament--colors" width="935" height="764" alt="орнамент"  />
+            <img src="img/info-whites.svg" class="info__ornament info__ornament--whites" width="207" height="157" alt="орнамент"  />
+            <div class="info__content">
+              <img class="info__snowflake" src="img/info-snowflake.svg" width="51" height="55"  alt="снежинка" />
+              <p class="info__text">Зимняя сказка с&nbsp;гигантским замком,<br> снежными скульптурами,<br> ледяным лабиринтом и&nbsp;возможностью<br> создать свой шедевр</p>
+              <a href="#" class="button">телеграм-канал фестиваля</a>
+            </div>
+          </div>
+        </section>
         <section class="about" id="about">
-
+          <div class="container">
+            <h2 class="about__title title">О фестивале</h2>
+            <div class="about__content">
+              <img src="img/about-image.jpg" alt="ледяная скульптура саамов" class="about__image" width="680" height="512">
+              <div class="about__text">
+                <h3>Настало время увидеть неповторимые чудеса России не&nbsp;покидая Москву.</h3>
+                <p>Герои любимых сказок, сюжеты народного творчества, репродукции известных картин изо льда, красота природы и&nbsp;даже известные люди&nbsp;&mdash; фестиваль &laquo;Снег и&nbsp;лед&raquo; удивит и&nbsp;создаст праздничное настроение каждому.</p>
+                <p>Познакомьтесь с&nbsp;уникальными ледяными творениями, почувствуйте гордость за&nbsp;нашу страну, загляните в&nbsp;&laquo;Замок чудес&raquo; с&nbsp;многоуровневыми горками, начните раскопки сокровищ или создайте собственное произведение снежного искусства под руководством скульпторов.</p>
+                <p>Приходите, чтобы весело провести<br> время всей семьей!</p>
+              </div>
+            </div>
+            <div class="about__plank">Вход свободный</div>
+          </div>
         </section>
         <section class="calendar" id="calendar">
           <div class="calendar__wrapper">

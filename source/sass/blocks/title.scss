@@ -1,20 +1,13 @@
 .title {
   font-weight: bold;
-  font-size: 5rem;
-  line-height: 5.9rem;
-  color: $blue;
-  width: 43.5rem;
-  border: 2px solid $blue;
-  box-sizing: border-box;
-  border-radius: 200px;
+  font-size: 4.65rem;
+  line-height: 4.8rem;
+  color: $white;
   text-transform: uppercase;
-  padding: 18px;
-  margin: 0;
+
 
   @media (max-width: $tablet) {
     font-size: 24px;
     line-height: 28px;
-    width: 200px;
-    padding: 5px 18px;
   }
 }

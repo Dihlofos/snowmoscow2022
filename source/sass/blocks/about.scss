@@ -1,0 +1,62 @@
+.about {
+    padding: 10.3rem 0 10.5rem;
+    background-color: $blue;
+    border-radius: 20px;
+
+    .container {
+        position: relative;
+    }
+
+    &__title {
+        margin: 0 0 6rem;
+    }
+
+    &__content {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    &__image {
+        border-radius: 25px;
+    }
+
+    &__text {
+        width: 36.1%;
+
+        h3 {
+            font-size: 3.1rem;
+            line-height: 3.7rem;
+            margin: 0 0 2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin: 0 0 2rem;
+        }
+    }
+
+    &__plank {
+        bottom: -17.4rem;
+        right: 4rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 24.9rem;
+        height: 24.9rem;
+        background-color: $pink;
+        color: $white;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        transform: rotate(-11.47deg);
+        text-align: center;
+        border-radius: 50%;
+        padding: 8rem 4rem 0;
+    }
+
+}

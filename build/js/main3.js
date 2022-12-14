@@ -427,6 +427,26 @@
 
 "use strict";
 (function () {
+    const cursor = document.querySelector(".js-cursor");
+
+
+
+    const moveCursor = (e)=> {
+        const mouseY = e.clientY - 30;
+        const mouseX = e.clientX - 30;
+
+        cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
+
+    }
+
+    window.addEventListener('mousemove', moveCursor)
+    window.addEventListener('scroll', moveCursor)
+
+})();
+
+"use strict";
+(function () {
   const togglers = document.querySelectorAll(".js-faq-toggler");
   if (!togglers.length) return;
 
@@ -479,41 +499,4 @@
     speedAsDuration: true,
     easing: "easeOutQuad",
   });
-})();
-
-"use strict";
-(function () {
-    const container = document.querySelector(".js-video");
-    const button = container.querySelector(".js-video-play");
-    const video = container.querySelector(".js-video-video");
-    const bg = container.querySelector('.js-video-bg');
-    let isVideoPlaying = false;
-
-    button.addEventListener('click', ()=>{
-        bg.style.opacity = 0;
-        video.play()
-        isVideoPlaying = true;
-        setTimeout(()=>{
-            bg.style.display="none"
-        }, 400)
-        console.log('video', video, bg);
-    })
-
-    video.addEventListener('click', ()=>{
-        if (isVideoPlaying) {
-            bg.style.display="flex"
-            setTimeout(()=>{
-                bg.style.opacity = 1;
-            }, 400)
-
-            video.pause()
-        } else {
-            bg.style.opacity = 1;
-            video.play()
-            setTimeout(()=>{
-                bg.style.display="none"
-            }, 400)
-        }
-
-    })
 })();
