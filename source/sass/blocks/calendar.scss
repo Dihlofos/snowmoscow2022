@@ -1,0 +1,217 @@
+.calendar {
+  position: relative;
+  padding: 5.4rem 0 6.8rem;
+  background-color: $white;
+  margin: 0 0 4.8rem;
+  color: $black;
+  z-index: 10;
+
+  &__title {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 5.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue;
+    margin: 0 0 4rem;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__description {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+
+    margin: 0 0 6.8rem;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 110rem;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 3.5rem;
+  }
+
+  &__month-title {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    color: $blue;
+    margin: 0;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__arrow {
+    color: $blue;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &--disabled {
+      pointer-events: none;
+      cursor: auto;
+      color: $grey;
+    }
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+  }
+
+  &__header-cell {
+    flex-grow: 1;
+    text-align: center;
+    background-color: $blue;
+    border-right: 1px solid $white;
+    color: $white;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    padding: 0.7rem 0;
+    margin: 0 0 2rem;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+
+    &:first-child {
+      border-radius: 30px 0px 0px 30px;
+
+      @media (max-width: 1024px) {
+        border-radius: 15px 0px 0px 15px;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0px 30px 30px 0px;
+
+      @media (max-width: 1024px) {
+        border-radius: 0px 15px 15px 0px;
+      }
+    }
+  }
+
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cell {
+    font-size: 3rem;
+    line-height: 3.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 0;
+    border: 1px solid $blue;
+    width: calc(100% / 7);
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    &:first-child {
+      border-top-left-radius: 30px;
+
+      @media (max-width: 1024px) {
+        border-top-left-radius: 15px;
+      }
+      a {
+        border-top-left-radius: 30px;
+      }
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 30px;
+
+      @media (max-width: 1024px) {
+        border-bottom-right-radius: 15px;
+      }
+      a {
+        border-bottom-right-radius: 30px;
+      }
+    }
+
+    &:nth-child(7) {
+      border-top-right-radius: 30px;
+      @media (max-width: 1024px) {
+        border-top-right-radius: 15px;
+      }
+      a {
+        border-top-right-radius: 30px;
+      }
+    }
+
+    &--left-radius {
+      border-bottom-left-radius: 30px;
+      @media (max-width: 1024px) {
+        border-bottom-left-radius: 15px;
+      }
+      a {
+        border-bottom-left-radius: 30px;
+      }
+    }
+
+    &--otherMonth {
+      background: $pink;
+      color: $grey;
+    }
+
+    &--disabled {
+      background: $pastel;
+      color: $grey;
+      cursor: auto;
+      pointer-events: none;
+    }
+
+    &--today {
+      font-weight: bold;
+    }
+
+    a {
+      color: $black;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 1rem 0;
+      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      a {
+        color: $white;
+        background-color: $blue;
+
+        @media (max-width: 1024px) {
+          color: $black;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
