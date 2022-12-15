@@ -428,8 +428,8 @@
 "use strict";
 (function () {
     const cursor = document.querySelector(".js-cursor");
-
-
+    var a = document.querySelectorAll('a');
+    var button = document.querySelectorAll('button');
 
     const moveCursor = (e)=> {
         const mouseY = e.clientY - 30;
@@ -437,11 +437,38 @@
 
         cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
-
     }
 
-    window.addEventListener('mousemove', moveCursor)
-    window.addEventListener('scroll', moveCursor)
+    a.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+    })
+
+    button.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+    })
+
+    document.addEventListener('mousedown', function(){
+        cursor.classList.add('click');
+        cursorinner.classList.add('cursorinnerhover')
+    });
+
+    document.addEventListener('mouseup', function(){
+        cursor.classList.remove('click')
+        cursorinner.classList.remove('cursorinnerhover')
+    });
+
+    window.addEventListener('mousemove', moveCursor);
+    window.addEventListener('scroll', moveCursor);
 
 })();
 
@@ -490,6 +517,37 @@
       }
     });
   }
+})();
+
+"use strict";
+(function () {
+  const swiperSlider = new Swiper(".js-slider", {
+    // Optional parameters
+    loop: false,
+    slidesPerView: 3,
+    speed: 1000,
+
+    navigation: {
+      nextEl: ".swiper__next",
+      prevEl: ".swiper__prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+
+      1025: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
 })();
 
 "use strict";
