@@ -1,0 +1,132 @@
+.artzone {
+    padding: 10.8rem 0 0;
+
+    .container {
+        position: relative;
+    }
+
+    &__ornament {
+        position: absolute;
+        z-index: 0;
+
+        &--flakes {
+            top: 18.4rem;
+            left: 3.1rem;
+        }
+
+        &--dots {
+            top: 20.4rem;
+            right: 3.1rem;
+        }
+    }
+
+    &__wrapper {
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        width: 50%;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__header-content {
+        width: 48.5%;
+
+        p {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin: 0 0 4rem;
+            max-width: 40.4rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3.1rem;
+        line-height: 3.7rem;
+        margin: 0 0 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &--question {
+            margin: -3rem 0 0;
+        }
+    }
+
+    &__content {
+        padding: 10.2rem 0 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__create {
+        width: 46.5%;
+    }
+
+    &__visit {
+        width: 53.5%;
+        margin: -3.5rem 0 0;
+    }
+
+    &__learn {
+        margin: -6rem 8rem 0 0;
+    }
+
+    &__circle {
+        border-radius: 50%;
+        text-align: center;
+        color: $darkblue;
+        padding: 11.2rem 7.6rem 0;
+
+        h6 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-weight: 700;
+            margin: 0 0 1.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2.4rem;
+            line-height: 3rem;
+            font-weight: 500;
+            margin: 0 0 1.4rem;
+
+        }
+
+        span {
+            display: block;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+
+        &--create {
+            width: 45rem;
+            height: 45rem;
+            background-color: $yellow;
+        }
+
+        &--visit {
+            width: 41.4rem;
+            height: 41.4rem;
+            background-color: $pink;
+            color: $white
+        }
+
+        &--learn {
+            width: 38.2rem;
+            height: 38.2rem;
+            padding: 10.2rem 4.2rem 0;
+            background-color: $lighterBlue;
+        }
+
+    }
+
+}

@@ -2,13 +2,24 @@
     position: relative;
     padding: 19.9rem 0 10rem;
 
+    .container {
+        position: relative;
+    }
+
     &__ornament {
         position: absolute;
-        top: 7.9rem;
-        left: -0.7rem;
-        width: 101%;
         max-width: initial;
         z-index: 0;
+
+        &--blue {
+            top: -3.5rem;
+            right: -33.4rem;
+        }
+
+        &--white {
+            top: 34rem;
+            left: -25.4rem;
+        }
     }
 
     &__header {
@@ -27,7 +38,6 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 1px solid $white;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -1,27 +1,30 @@
 .info {
-    padding: 21.5rem 0 39.5rem;
+    padding: 22rem 0 38rem;
     position: relative;
     overflow: hidden;
+
+    .container {
+        position: relative;
+    }
 
     &__ornament {
         position: absolute;
 
         &--whites {
-            top: 18rem;
-            left: -3.4rem;
+            top: -3.5rem;
+            left: -12.5rem;
             height: 157px;
         }
 
         &--blues {
-            top: 3.7rem;
-            right: -0.6rem;
-            width: 101%;
+            top: -17.9rem;
+            left: -12.5rem;
             max-width: initial;
         }
 
         &--colors {
-            top: 10rem;
-            left: 39%;
+            top: -11.9rem;
+            left: 38.3%;
             transform: translate(-50%,0);
         }
 
