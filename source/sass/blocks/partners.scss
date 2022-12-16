@@ -1,0 +1,44 @@
+.partners {
+    padding: 9rem 0 5rem;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+
+        &--reverse {
+            flex-direction: row-reverse;
+            margin: 2.9rem 0 0;
+        }
+    }
+
+    &__circles {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    &__flakes {
+        flex-shrink: 1;
+        margin: -5.5rem 12rem 0 0;
+
+        .partners__block--reverse & {
+            margin: -2.2rem 0 0 12.8rem;
+        }
+    }
+
+    &__partner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22.7rem;
+        height: 22.7rem;
+        border-radius: 50%;
+        border: 1px solid $white;
+
+        img {
+            max-width: 80%;
+        }
+    }
+}

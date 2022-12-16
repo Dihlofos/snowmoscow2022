@@ -1,44 +1,28 @@
 .faq {
   position: relative;
-  z-index: 4;
-  padding: 5.9rem 0 8.2rem;
+  padding: 20rem 0 8.2rem;
 
   &__title {
-    font-size: 5rem;
-    line-height: 5.9rem;
-    font-weight: 700;
-    color: $blue;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 0 6.1rem;
-
-    @media (max-width: $tablet) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  &__accordeon {
-    max-width: 100rem;
-    margin: 0 auto;
-
-    @media (max-width: $tablet) {
-      max-width: calc(100% - 48px);
-    }
+    margin: 0 0 6rem;
   }
 
   &__item {
     width: 100%;
-    border-bottom: 2px solid $black;
+    border-bottom: 1px solid $white;
     margin: 0 0 3rem;
-    padding: 0 2rem 1.7rem;
+    padding: 0 0 3.2rem;
+
+    &:first-child {
+      border-top: 1px solid $white;
+      padding: 3rem 0 3rem;
+    }
   }
 
   &__toggler {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: $blue;
+    color: $white;
     width: 100%;
     text-transform: uppercase;
     font-weight: 500;
@@ -48,9 +32,14 @@
     background: transparent;
     cursor: pointer;
     padding: 0;
-    margin: 0 0 1.5rem;
+
+    svg {
+      transition: transform 0.3s ease;
+      transform: rotate(90deg);
+    }
+
     &.active {
-      img {
+      svg {
         transform: rotate(-90deg);
       }
     }
@@ -64,9 +53,11 @@
 
   &__content {
     display: none;
-    color: $black;
-    font-size: 3rem;
-    line-height: 3.6rem;
+    color: $white;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin: 1rem 0 0;
 
     @media (max-width: $tablet) {
       font-size: 14px;

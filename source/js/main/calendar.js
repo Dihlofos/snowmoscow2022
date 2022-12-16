@@ -152,23 +152,24 @@
       },
       {
         number: 27,
+        disabled: true,
         link: "",
       },
       {
         number: 28,
-        link: "",
+        link: "https://disk.yandex.ru/d/mFTdM6t1cRq6IQ",
       },
       {
         number: 29,
-        link: "",
+        link: "https://disk.yandex.ru/d/XJiEabII3lgoWg",
       },
       {
         number: 30,
-        link: "",
+        link: "https://disk.yandex.ru/d/ydkCcJeAMydsxQ",
       },
       {
         number: 31,
-        link: "",
+        link: "https://disk.yandex.ru/d/HUFSJ7e1JGyx6A",
       }
     ],
     0: [
@@ -204,126 +205,129 @@
       },
       {
         number: 1,
-        link: "",
+        link: "https://disk.yandex.ru/d/EXjPjzAoNEVkYQ",
       },
       {
         number: 2,
-        link: "",
+        link: "https://disk.yandex.ru/d/a3yv5R8MY_mDyA",
       },
       {
         number: 3,
-        link: "",
+        link: "https://disk.yandex.ru/d/I2qE_-PktLihKw",
       },
       {
         number: 4,
-        link: "",
+        link: "https://disk.yandex.ru/d/w_vCTnzE0ph4oQ",
       },
       {
         number: 5,
-        link: "",
+        link: "https://disk.yandex.ru/d/nEW8mbJR8Mf8OQ",
       },
       {
         number: 6,
-        link: "",
+        link: "https://disk.yandex.ru/d/ZsTyzzN7GmQEJw",
       },
       {
         number: 7,
-        link: "",
+        link: "https://disk.yandex.ru/d/E9e_hgbKrEKNDA",
       },
       {
         number: 8,
-        link: "",
+        link: "https://disk.yandex.ru/d/g0n9CTrXuwinNw",
       },
       {
         number: 9,
-        link: "",
+        link: "https://disk.yandex.ru/d/RnMS9lQ0jTmeQA",
       },
       {
         number: 10,
-        link: "",
+        link: "https://disk.yandex.ru/d/exyBUktTUX6L2w",
       },
       {
         number: 11,
-        link: "",
+        link: "https://disk.yandex.ru/d/SjqUwPujXTVDtw",
       },
       {
         number: 12,
-        link: "",
+        link: "https://disk.yandex.ru/d/YXsc0L_qSWVWAg",
       },
       {
         number: 13,
-        link: "",
+        link: "https://disk.yandex.ru/d/0V7QJAuFDjNSRg",
       },
       {
         number: 14,
-        link: "",
+        link: "https://disk.yandex.ru/d/K0w6jVJDYsNk1A",
       },
       {
         number: 15,
-        link: "",
+        link: "https://disk.yandex.ru/d/lIVQPEXw_v0oAg",
       },
       {
         number: 16,
-        link: "",
+        link: "https://disk.yandex.ru/d/nnJ-vZaZkCXZrA",
       },
       {
         number: 17,
-        link: "",
+        link: "https://disk.yandex.ru/d/yxpKpXTaaAFE4g",
       },
       {
         number: 18,
-        link: "",
+        link: "https://disk.yandex.ru/d/XJwuBtGE8Hxa1w",
       },
       {
         number: 19,
-        link: "",
+        link: "https://disk.yandex.ru/d/tabkJ1opp-R3uQ",
       },
       {
         number: 20,
-        link: "",
+        link: "https://disk.yandex.ru/d/x5yHmHliaizuWw",
       },
       {
         number: 21,
-        link: "",
+        link: "https://disk.yandex.ru/d/MwSfCX_Pmnn1bg",
       },
       {
         number: 22,
-        link: "",
+        link: "https://disk.yandex.ru/d/hfdclLJd69ugZA",
       },
       {
         number: 23,
-        link: "",
+        link: "https://disk.yandex.ru/d/irijH0fQGC14SQ",
       },
       {
         number: 24,
-        link: "",
+        link: "https://disk.yandex.ru/d/_TXTTSP4VEbSWA",
       },
       {
         number: 25,
-        link: "",
+        link: "https://disk.yandex.ru/d/SlEIp2wUXZPAjA",
       },
       {
         number: 26,
-        link: "",
+        link: "https://disk.yandex.ru/d/G2rn-awEol21kA",
       },
       {
         number: 27,
-        link: "",
+        link: "https://disk.yandex.ru/d/I1nzAZ7S_61AqQ",
       },
       {
         number: 28,
-        link: "",
+        link: "https://disk.yandex.ru/d/-dNo45Wt4YX1eg",
       },
       {
         number: 29,
+        disabled: true,
         link: "",
       },
       {
         number: 30,
+        disabled: true,
         link: "",
       },
       {
         number: 31,
+        disabled: true,
         link: "",
       }
     ],
