@@ -1,5 +1,5 @@
 .artzone {
-    padding: 10.8rem 0 0;
+    padding: 10rem 0 0;
 
     .container {
         position: relative;
@@ -60,19 +60,19 @@
     }
 
     &__content {
-        padding: 10.2rem 0 0;
+        padding: 10.5rem 0 0;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
     }
 
     &__create {
-        width: 46.5%;
+        width: 46.3%;
     }
 
     &__visit {
-        width: 53.5%;
-        margin: -3.5rem 0 0;
+        width: 53.7%;
+        margin: -2.8rem 0 0;
     }
 
     &__learn {
@@ -111,6 +111,7 @@
             width: 45rem;
             height: 45rem;
             background-color: $yellow;
+            padding: 10.4rem 7.6rem 0;
         }
 
         &--visit {

@@ -58,7 +58,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list js-nav">
             <li class="nav__item">
-              <a class="nav__link js-scroll" data-scroll href="#info"
+              <a class="nav__link js-scroll" data-scroll href="#about"
                 >О фестивале</a
               >
             </li>
@@ -115,7 +115,7 @@
                   </div>
                 </div>
                 <video class="hero__video js-video-video" poster="img/hero-video-image.jpg" muted inline autoplay loop>
-                  <source src="video/hero.mp4" type="video/mp4">
+                  <source src="video/desktop.mp4" type="video/mp4">
                 </video>
               </div>
               <ul class="hero__tops">
@@ -187,18 +187,18 @@
             <div class="location__header">
               <h2 class="location__title title">Локации</h2>
               <div class="swiper__nav">
-                <div class="swiper__control swiper__prev">
+                <button class="swiper__control swiper__prev">
                   <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="white"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="white"/>
-                    </svg>
-                </div>
-                <div class="swiper__control swiper__next">
+                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
+                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  </svg>
+                </button>
+                <button class="swiper__control swiper__next">
                   <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="white"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="white"/>
+                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
+                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
                     </svg>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -415,63 +415,49 @@
         </section>
 
         <section class="calendar" id="calendar">
-          <div class="calendar__wrapper">
-            <h2 class="calendar__title">Найдите своё фото</h2>
-            <p class="calendar__description">
-              Выберите нужный день и ищите свои фотографии с фестиваля.
-            </p>
-            <div class="calendar__container js-calendar">
-              <nav class="calendar__nav js-nav">
-                <button
-                  class="calendar__arrow js-prev"
-                >
-                  <svg
-                    width="17"
-                    height="28"
-                    viewBox="0 0 17 28"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M13.7679 0.0180664L16.4196 2.66972L5.55791 13.5314L16.4196 24.3931L13.7679 27.0447L0.25461 13.5314L13.7679 0.0180664Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </button>
-                <h4 class="calendar__month-title js-month">Январь 2022</h4>
-                <button class="calendar__arrow js-next">
-                  <svg
-                    width="17"
-                    height="28"
-                    viewBox="0 0 17 28"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M3.23206 27.0444L0.580414 24.3928L11.4421 13.5311L0.580413 2.66943L3.23206 0.017784L16.7454 13.5311L3.23206 27.0444Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </button>
-              </nav>
-              <header class="calendar__header">
-                <div class="calendar__header-cell">Пн</div>
-                <div class="calendar__header-cell">Вт</div>
-                <div class="calendar__header-cell">Ср</div>
-                <div class="calendar__header-cell">Чт</div>
-                <div class="calendar__header-cell">Пт</div>
-                <div class="calendar__header-cell">Сб</div>
-                <div class="calendar__header-cell">Вс</div>
-              </header>
-              <div class="calendar__content js-content">
-
+          <div class="container">
+            <div class="calendar__wrapper">
+              <div class="calendar__description">
+                <h2 class="calendar__title title">Фотографии</h2>
+                <div class="calendar__text">
+                  <p>
+                    Наслаждайтесь отдыхом и&nbsp;сохраняйте руки в&nbsp;тепле&nbsp;&mdash; наши фотографы сделают всё, чтобы у&nbsp;вас остались яркие и&nbsp;атмосферные кадры.
+                  </p>
+                  <p>Выбирайте дату посещения на&nbsp;календаре, открывайте галерею со&nbsp;всеми фотографиями этого дня и&nbsp;ищите себя.</p>
+                </div>
+                <div class="calendar__subtitle">
+                  Делитесь яркими кадрами в соцсетях с хэштегом <span>#снегиледвмоскве</span>
+                </div>
               </div>
-
-
+              <div class="calendar__body js-calendar">
+                <nav class="calendar__nav js-nav">
+                  <button
+                    class="calendar__arrow calendar__arrow--prev js-prev"
+                  >
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
+                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  </svg>
+                  </button>
+                  <h4 class="calendar__month-title js-month">Январь 2022</h4>
+                  <button class="calendar__arrow js-next ">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
+                      <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                      </svg>
+                  </button>
+                </nav>
+                <header class="calendar__header">
+                  <div class="calendar__header-cell">Пн</div>
+                  <div class="calendar__header-cell">Вт</div>
+                  <div class="calendar__header-cell">Ср</div>
+                  <div class="calendar__header-cell">Чт</div>
+                  <div class="calendar__header-cell">Пт</div>
+                  <div class="calendar__header-cell">Сб</div>
+                  <div class="calendar__header-cell">Вс</div>
+                </header>
+                <div class="calendar__content js-content">
+                </div>
               </div>
             </div>
           </div>

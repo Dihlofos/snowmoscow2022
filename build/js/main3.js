@@ -1,30 +1,23 @@
 "use strict";
 (function () {
   const data = {
-    0: [
-      {
-        number: 27,
-        disabled: true,
-        link: "",
-      },
-      {
-        number: 28,
-        disabled: true,
-        link: "",
-      },
+    11: [
       {
         number: 29,
         disabled: true,
+        otherMonth: true,
         link: "",
       },
       {
         number: 30,
         disabled: true,
+        otherMonth: true,
         link: "",
       },
       {
         number: 31,
         disabled: true,
+        otherMonth: true,
         link: "",
       },
       {
@@ -64,281 +57,400 @@
       },
       {
         number: 8,
-        link: "https://disk.yandex.ru/d/ubteLKY83IDyrg",
+        disabled: true,
+        link: "",
       },
       {
         number: 9,
-        link: "https://disk.yandex.ru/d/PDhXBjckM4q6Ew",
+        disabled: true,
+        link: "",
       },
       {
         number: 10,
-        link: "https://disk.yandex.ru/d/XdaEUMjjT5s03g",
+        disabled: true,
+        link: "",
       },
       {
         number: 11,
-        link: "https://disk.yandex.ru/d/PbdG7QR1n6XQAA",
+        disabled: true,
+        link: "",
       },
       {
         number: 12,
-        link: "https://disk.yandex.ru/d/6KGdqo8tH4q_cg",
+        disabled: true,
+        link: "",
       },
       {
         number: 13,
-        link: "https://disk.yandex.ru/d/_ysKttKIlw-M8g",
+        disabled: true,
+        link: "",
       },
       {
         number: 14,
-        link: "https://disk.yandex.ru/d/V447bnCFeOQz1A",
+        disabled: true,
+        link: "",
       },
       {
         number: 15,
-        link: "https://disk.yandex.ru/d/0QFnwQ7m-TEN8Q",
+        disabled: true,
+        link: "",
       },
       {
         number: 16,
-        link: "https://disk.yandex.ru/d/VFMHiTjJgJ8yDg",
+        disabled: true,
+        link: "",
       },
       {
         number: 17,
-        link: "https://disk.yandex.ru/d/ITJL96U5GFTOAg",
+        disabled: true,
+        link: "",
       },
       {
         number: 18,
-        link: "https://disk.yandex.ru/d/2dkLwNxqG9fX3g",
+        disabled: true,
+        link: "",
       },
       {
         number: 19,
-        link: "https://disk.yandex.ru/d/XAiWL3SudlJCKQ",
+        disabled: true,
+        link: "",
       },
       {
         number: 20,
-        link: "https://disk.yandex.ru/d/_tnD5oH7NPfm6Q",
+        disabled: true,
+        link: "",
       },
       {
         number: 21,
-        link: "https://disk.yandex.ru/d/ge4cTt6PhzZtFQ",
+        disabled: true,
+        link: "",
       },
       {
         number: 22,
-        link: "https://disk.yandex.ru/d/QCcgnrXHmmumNw",
+        disabled: true,
+        link: "",
       },
       {
         number: 23,
-        link: "https://disk.yandex.ru/d/jDA6lR-6LeaNeQ",
+        disabled: true,
+        link: "",
       },
       {
         number: 24,
-        link: "https://disk.yandex.ru/d/o_jd6q6ZmQvg0A",
+        disabled: true,
+        link: "",
       },
       {
         number: 25,
-        link: "https://disk.yandex.ru/d/NbImA0fRciubGA",
+        disabled: true,
+        link: "",
       },
       {
         number: 26,
-        link: "https://disk.yandex.ru/d/BU40d9NhuF9e2w",
+        disabled: true,
+        link: "",
       },
       {
         number: 27,
-        link: "https://disk.yandex.ru/d/aASkjGXbxYuOxQ",
+        link: "",
       },
       {
         number: 28,
-        link: "https://disk.yandex.ru/d/Wovli-qsmV1D7A",
+        link: "",
       },
       {
         number: 29,
-        link: "https://disk.yandex.ru/d/y_n4DoLsMSPo0Q",
+        link: "",
       },
       {
         number: 30,
-        link: "https://disk.yandex.ru/d/xRGDiGknCJClfA",
+        link: "",
       },
       {
         number: 31,
-        link: "https://disk.yandex.ru/d/IG-AuJ9WI0rRbw",
+        link: "",
+      }
+    ],
+    0: [
+      {
+        number: 26,
+        otherMonth: true,
+        link: "",
+      },
+      {
+        number: 27,
+        otherMonth: true,
+        link: "",
+      },
+      {
+        number: 28,
+        otherMonth: true,
+        link: "",
+      },
+      {
+        number: 29,
+        otherMonth: true,
+        link: "",
+      },
+      {
+        number: 30,
+        otherMonth: true,
+        link: "",
+      },
+      {
+        number: 31,
+        otherMonth: true,
+        link: "",
       },
       {
         number: 1,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/4JGrhofBkhmY3Q",
+        link: "",
       },
       {
         number: 2,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/bfTSd9NdpJ8HPw",
+        link: "",
       },
       {
         number: 3,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/zMr--G7MuCAe7A",
+        link: "",
       },
       {
         number: 4,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/W_O_Mc_PN2w2zg",
+        link: "",
       },
       {
         number: 5,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/PXWpURnDda9yqw",
+        link: "",
       },
       {
         number: 6,
-        otherMonth: true,
-        link: "https://disk.yandex.ru/d/ZSNfaK8jMzeZxg",
+        link: "",
       },
+      {
+        number: 7,
+        link: "",
+      },
+      {
+        number: 8,
+        link: "",
+      },
+      {
+        number: 9,
+        link: "",
+      },
+      {
+        number: 10,
+        link: "",
+      },
+      {
+        number: 11,
+        link: "",
+      },
+      {
+        number: 12,
+        link: "",
+      },
+      {
+        number: 13,
+        link: "",
+      },
+      {
+        number: 14,
+        link: "",
+      },
+      {
+        number: 15,
+        link: "",
+      },
+      {
+        number: 16,
+        link: "",
+      },
+      {
+        number: 17,
+        link: "",
+      },
+      {
+        number: 18,
+        link: "",
+      },
+      {
+        number: 19,
+        link: "",
+      },
+      {
+        number: 20,
+        link: "",
+      },
+      {
+        number: 21,
+        link: "",
+      },
+      {
+        number: 22,
+        link: "",
+      },
+      {
+        number: 23,
+        link: "",
+      },
+      {
+        number: 24,
+        link: "",
+      },
+      {
+        number: 25,
+        link: "",
+      },
+      {
+        number: 26,
+        link: "",
+      },
+      {
+        number: 27,
+        link: "",
+      },
+      {
+        number: 28,
+        link: "",
+      },
+      {
+        number: 29,
+        link: "",
+      },
+      {
+        number: 30,
+        link: "",
+      },
+      {
+        number: 31,
+        link: "",
+      }
     ],
     1: [
       {
+        number: 30,
+        otherMonth: true,
+        link: "",
+      },
+      {
         number: 31,
         otherMonth: true,
-        link: "https://disk.yandex.ru/d/IG-AuJ9WI0rRbw",
+        link: "",
       },
       {
         number: 1,
-
-        link: "https://disk.yandex.ru/d/4JGrhofBkhmY3Q",
+        link: "",
       },
       {
         number: 2,
-        link: "https://disk.yandex.ru/d/bfTSd9NdpJ8HPw",
+        link: "",
       },
       {
         number: 3,
-        link: "https://disk.yandex.ru/d/zMr--G7MuCAe7A",
+        link: "",
       },
       {
         number: 4,
-        link: "https://disk.yandex.ru/d/W_O_Mc_PN2w2zg",
+        link: "",
       },
       {
         number: 5,
-        link: "https://disk.yandex.ru/d/PXWpURnDda9yqw",
+        link: "",
       },
       {
         number: 6,
-        link: "https://disk.yandex.ru/d/ZSNfaK8jMzeZxg",
+        link: "",
       },
       {
         number: 7,
-        link: "https://disk.yandex.ru/d/a_qqqKxdD1ecVg",
+        link: "",
       },
       {
         number: 8,
-        link: "https://disk.yandex.ru/d/xi81X1ewZ_SOLg",
+        link: "",
       },
       {
         number: 9,
-        link: "https://disk.yandex.ru/d/3MdadUbZzMPByA",
+        link: "",
       },
       {
         number: 10,
-        link: "https://disk.yandex.ru/d/dwywUCm9qfwJHw",
+        link: "",
       },
       {
         number: 11,
-        link: "https://disk.yandex.ru/d/6kFlghtqW0Zq_g",
+        link: "",
       },
       {
         number: 12,
-        link: "https://disk.yandex.ru/d/LQbwtxe4GL7W0Q",
+        link: "",
       },
       {
         number: 13,
-        link: "https://disk.yandex.ru/d/I3VwVDpD8GDybg",
+        link: "",
       },
       {
         number: 14,
-        link: "https://disk.yandex.ru/d/o6OwcDXCE_7xDg",
+        link: "",
       },
       {
         number: 15,
-        link: "https://disk.yandex.ru/d/nPYR-09ZHuptLg",
+        link: "",
       },
       {
         number: 16,
-        link: "https://disk.yandex.ru/d/AjsEj1dyqmzbkg",
+        link: "",
       },
       {
         number: 17,
-        link: "https://disk.yandex.ru/d/hG3U_92hI4QPBQ",
+        link: "",
       },
       {
         number: 18,
-        link: "https://disk.yandex.ru/d/M1Bg9TiIYLIGRA",
+        link: "",
       },
       {
         number: 19,
-        link: "https://disk.yandex.ru/d/OO0-I2aHllPKuQ",
+        link: "",
       },
       {
         number: 20,
-        link: "https://disk.yandex.ru/d/JK7fom4978W4fg",
+        link: "",
       },
       {
         number: 21,
-        link: "https://disk.yandex.ru/d/E6MjAtTfVZctTQ",
+        link: "",
       },
       {
         number: 22,
-        link: "https://disk.yandex.ru/d/f-I0KPSGLOJSlg",
+        link: "",
       },
       {
         number: 23,
-        link: "https://disk.yandex.ru/d/NqaRus7CM3a5Tw",
+        link: "",
       },
       {
         number: 24,
-        link: "https://disk.yandex.ru/d/R_MmBupjWjJd6g",
+        link: "",
       },
       {
         number: 25,
-        link: "https://disk.yandex.ru/d/4ziP_558e9kE0w",
+        link: "",
       },
       {
         number: 26,
-        link: "https://disk.yandex.ru/d/UB1-Sew0OiQeCg",
+        link: "",
       },
       {
         number: 27,
-        link: "https://disk.yandex.ru/d/59eSoC7E3n1aGw",
+        link: "",
       },
       {
         number: 28,
-        link: "https://disk.yandex.ru/d/qTWDsOUdVLywtQ",
-      },
-      {
-        number: 1,
-        disabled: true,
         link: "",
-      },
-      {
-        number: 2,
-        disabled: true,
-        link: "",
-      },
-      {
-        number: 3,
-        disabled: true,
-        link: "",
-      },
-      {
-        number: 4,
-        disabled: true,
-        link: "#",
-      },
-      {
-        number: 5,
-        disabled: true,
-        link: "#",
-      },
-      {
-        number: 6,
-        disabled: true,
-        link: "#",
-      },
-    ],
+      }
+    ]
   };
   const container = document.querySelector(".js-calendar");
   const next = container.querySelector(".js-next");
@@ -348,7 +460,17 @@
 
   const { todayDay, todayMonth } = getToday();
 
-  const months = ["Январь 2022", "Февраль 2022"];
+  let activeMonth = todayMonth;
+  const firstMonth = 11;
+  const lastMonth = 0;
+
+  const months = {
+    11: "Декабрь 2022",
+    0: "Январь 2023",
+    1: "Февраль 2023",
+  };
+  const monthsIndexes = [11,0];
+
   init();
 
   function getToday() {
@@ -360,24 +482,27 @@
   }
 
   function init() {
-    setMonth(todayMonth);
-    renderTable(data[todayMonth], todayMonth);
+    const monthToInit = monthsIndexes.includes(todayMonth) ? todayMonth : lastMonth;
+    setMonth(monthToInit);
+    renderTable(data[monthToInit], monthToInit);
 
-    if (todayMonth === 0) {
+    if (monthToInit === firstMonth) {
       prev.classList.add("calendar__arrow--disabled");
     }
-    if (todayMonth === 1) {
+    if (monthToInit === lastMonth) {
       next.classList.add("calendar__arrow--disabled");
     }
 
     next.addEventListener("click", () => {
-      changeMonth(1);
-      prev.classList.remove("calendar__arrow--disabled");
+      const newMonth = activeMonth === firstMonth ? 0 : activeMonth + 1
+      changeMonth(newMonth);
       next.classList.add("calendar__arrow--disabled");
+      prev.classList.remove("calendar__arrow--disabled");
     });
 
     prev.addEventListener("click", () => {
-      changeMonth(0);
+      const newMonth = activeMonth === lastMonth ? firstMonth : activeMonth - 1;
+      changeMonth(newMonth);
       prev.classList.add("calendar__arrow--disabled");
       next.classList.remove("calendar__arrow--disabled");
     });
@@ -386,10 +511,12 @@
   function changeMonth(newIndex) {
     content.innerHTML = "";
     month.textContent = months[newIndex];
+    activeMonth = newIndex;
     renderTable(data[newIndex], newIndex);
   }
 
   function setMonth(index) {
+    activeMonth = index;
     month.textContent = months[index];
   }
 
@@ -400,11 +527,10 @@
       return;
     }
     data.forEach((item, index) => {
+      const cursor = document.querySelector(".js-cursor");
       const innerCell = document.createElement("div");
       innerCell.classList.add("calendar__cell");
-      if (index == data.length - 7) {
-        innerCell.classList.add("calendar__cell--left-radius");
-      }
+
       if (item.disabled) {
         innerCell.classList.add("calendar__cell--disabled");
       }
@@ -413,7 +539,17 @@
         innerCell.classList.add("calendar__cell--otherMonth");
       }
 
+      if (item.number === todayDay && todayMonth === month) {
+        innerCell.classList.add("calendar__cell--today");
+      }
+
       const link = document.createElement("a");
+      link.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+      });
+      link.addEventListener('mouseleave', () => {
+          cursor.classList.remove('hover');
+      });
       link.href = item.link;
       link.target = "_blank";
       link.textContent = item.number;
@@ -439,6 +575,7 @@
 
     }
 
+
     a.forEach(item => {
         item.addEventListener('mouseover', () => {
             cursor.classList.add('hover');
@@ -459,12 +596,10 @@
 
     document.addEventListener('mousedown', function(){
         cursor.classList.add('click');
-        cursorinner.classList.add('cursorinnerhover')
     });
 
     document.addEventListener('mouseup', function(){
-        cursor.classList.remove('click')
-        cursorinner.classList.remove('cursorinnerhover')
+        cursor.classList.remove('click');
     });
 
     window.addEventListener('mousemove', moveCursor);

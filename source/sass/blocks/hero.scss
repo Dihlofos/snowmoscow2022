@@ -16,8 +16,6 @@
         width: 100%;
         height: 100%;
         z-index: 3;
-        transition: opacity 0.3s;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
 
     &__bg-announce {
@@ -45,18 +43,6 @@
         }
     }
 
-    &__play {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 8.4rem;
-        height: 8.4rem;
-        border: 3px solid $white;
-        border-radius: 50%;
-        background:  transparent;
-        padding: 0;
-        cursor: pointer;
-    }
 
     &__video-wrapper {
         width: 100%;
