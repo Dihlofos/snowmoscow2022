@@ -2,6 +2,11 @@
   position: relative;
   padding: 20rem 0 8.2rem;
 
+  .js-anim-right,
+  .js-anim-bottom {
+    opacity: 0;
+  }
+
   &__title {
     margin: 0 0 6rem;
   }

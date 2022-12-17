@@ -1,5 +1,11 @@
 .partners {
-    padding: 9rem 0 20rem;
+    padding: 9rem 0 14.5rem;
+
+    .js-anim-bottom,
+    .js-anim-right,
+    .js-anim-left {
+        opacity:0;
+    }
 
     &__block {
         display: flex;
@@ -19,12 +25,15 @@
         flex-shrink: 0;
     }
 
-    &__flakes {
+    &__snowflakes {
         flex-shrink: 1;
-        margin: -5.5rem 12rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin: 0 11.7rem 5.6rem 0;
 
-        .partners__block--reverse & {
-            margin: -2.2rem 0 0 12.8rem;
+        &--reverse {
+            margin: 0rem 0 2.5rem 12.7rem;
         }
     }
 

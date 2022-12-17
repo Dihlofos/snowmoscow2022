@@ -1,10 +1,22 @@
 .footer {
-    padding: 8rem 0 4rem;
-    background-color: $blue;
-    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5.2rem;
 
     .container {
         position: relative;
+    }
+
+    .js-anim-bottom {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    &__wrapper {
+        padding: 8rem 0 4rem;
+        background-color: $blue;
+        border-radius: 20px 20px 0px 0px;
+
     }
 
     &__ornament {

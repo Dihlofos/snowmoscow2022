@@ -6,18 +6,24 @@
         position: relative;
     }
 
+
+
+    &__title {
+        opacity: 0;
+    }
+
     &__ornament {
         position: absolute;
         max-width: initial;
         z-index: 0;
 
         &--blue {
-            top: -3.5rem;
+            top: 6.5rem;
             right: -33.4rem;
         }
 
         &--white {
-            top: 34rem;
+            top: 22rem;
             left: -25.4rem;
         }
     }
@@ -27,6 +33,7 @@
         justify-content: space-between;
     }
     .swiper__nav {
+        opacity: 0;
         position: relative;
         display: flex;
         gap: 1rem;
@@ -59,5 +66,9 @@
 
     .swiper__prev {
       transform: rotate(180deg);
+    }
+
+    .swiper-slide {
+        opacity: 0;
     }
 }

@@ -5,6 +5,13 @@
         position: relative;
     }
 
+    .js-anim-bottom,
+    .js-anim-scale,
+    .js-anim-scale-visit {
+        opacity: 0;
+    }
+
+
     &__ornament {
         position: absolute;
         z-index: 0;
@@ -17,6 +24,11 @@
         &--dots {
             top: 20.4rem;
             right: 3.1rem;
+        }
+
+        &--dots2 {
+            bottom: -4.6rem;
+            left: 7.1rem;
         }
     }
 

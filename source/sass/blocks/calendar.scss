@@ -3,6 +3,11 @@
   background-color: $blue;
   border-radius: 20px;
 
+  .js-anim-bottom,
+  .js-calendar {
+    opacity: 0;
+  }
+
   &__description {
     width: 35%;
   }
@@ -37,7 +42,6 @@
     display: flex;
     justify-content: space-between;
   }
-
 
 
   &__nav {
@@ -131,23 +135,23 @@
       opacity: 0;
     }
 
-    &--today {
-      &:after {
-        content: '';
-        position: absolute;
-        width: 5.6rem;
-        height: 5.6rem;
-        border-radius: 50%;
-        background-color: $pink;
-        z-index: 0;
-      }
+    // &--today {
+    //   &:after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 5.6rem;
+    //     height: 5.6rem;
+    //     border-radius: 50%;
+    //     background-color: $pink;
+    //     z-index: 0;
+    //   }
 
-      &:hover {
-        a {
-          color: $white;
-        }
-      }
-    }
+    //   &:hover {
+    //     a {
+    //       color: $white;
+    //     }
+    //   }
+    // }
 
     a {
       position: relative;

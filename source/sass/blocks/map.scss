@@ -5,6 +5,11 @@
         position: relative;
     }
 
+    .js-anim-bottom {
+        opacity: 0;
+    }
+
+
     &__content {
         position: relative;
         z-index: 2;
