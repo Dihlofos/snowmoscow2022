@@ -7,8 +7,9 @@
     margin: 2.8rem 0 0;
     z-index: 5;
     img {
-      width: 100%;
+      max-width: initial;
     }
+
   }
 
   &__hero {

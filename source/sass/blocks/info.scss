@@ -11,21 +11,38 @@
         position: absolute;
 
         &--whites {
-            top: -3.5rem;
+            top: 1.4rem;
             left: -12.5rem;
-            height: 157px;
         }
 
-        &--blues {
-            top: -17.9rem;
+        &--blue-right-top {
+            top: -12.6rem;
+            right: 10.1rem;
+        }
+
+        &--blue-right-bottom {
+            bottom: -9.5rem;
+            right: -33rem;
+        }
+
+        &--blue-left-bottom {
+            bottom: 0;
             left: -11rem;
-            max-width: initial;
         }
 
-        &--colors {
-            top: -11.9rem;
-            left: 38.3%;
-            transform: translate(-50%,0);
+        &--color-top {
+            top: -23.3rem;
+            left: 51rem;
+        }
+
+        &--color-left {
+            bottom: -2rem;
+            left: 13rem;
+        }
+
+        &--color-bottom {
+            bottom: -17.8rem;
+            right: 36.3rem;
         }
 
     }
@@ -40,6 +57,7 @@
         align-items: center;
         position: relative;
         z-index: 2;
+        opacity: 0;
     }
 
     &__text {
