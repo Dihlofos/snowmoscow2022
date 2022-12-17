@@ -3,8 +3,22 @@
     position: relative;
     overflow: hidden;
 
+    @media (max-width: $tablet) {
+        padding: 13rem 0 15rem;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 75px 0px 80px;
+    }
+
     .container {
         position: relative;
+    }
+
+    @media (min-width: $tablet) {
+        .js-anim {
+            opacity: 0;
+        }
     }
 
     &__ornament {
@@ -13,42 +27,111 @@
         &--whites {
             top: 1.4rem;
             left: -12.5rem;
+            width: 20.8rem;
+            height: 15.8rem;
+
+            @media (max-width: $mobile) {
+                top: -27px;
+                left: -19px;
+                width: 83px;
+                height: 63px;
+            }
         }
 
         &--blue-right-top {
             top: -12.6rem;
             right: 10.1rem;
+            width: 22.4rem;
+            height: 22.1rem;
+
+            @media (max-width: $mobile) {
+                top: -26px;
+                right: 29px;
+                width: 60px;
+                height: 61px;
+            }
         }
 
         &--blue-right-bottom {
             bottom: -9.5rem;
             right: -33rem;
+            width: 57.5rem;
+            height: 50.7rem;
+
+            @media (max-width: $mobile) {
+                bottom: 19px;
+                right: -30px;
+                width: 161px;
+                height: auto;
+            }
         }
 
         &--blue-left-bottom {
             bottom: 0;
             left: -11rem;
+            width: 41.8rem;
+            height: 46.3rem;
+
+            @media (max-width: $mobile) {
+                bottom: 53px;
+                left: -39px;
+                width: 113px;
+                height: 125px;
+            }
         }
 
         &--color-top {
             top: -23.3rem;
             left: 51rem;
+            width: 9.6rem;
+            height: 9rem;
+
+            @media (max-width: $mobile) {
+                top: -18px;
+                left: 92px;
+                width: 28px;
+                height: auto;
+            }
         }
 
         &--color-left {
             bottom: -2rem;
             left: 13rem;
+            width: 8.5rem;
+            height: 5.5rem;
+
+            @media (max-width: $mobile) {
+                bottom: 69px;
+                left: 30px;
+                width: 34px;
+                height: 22px;
+            }
         }
 
         &--color-bottom {
             bottom: -17.8rem;
             right: 36.3rem;
+            width: 6.9rem;
+            height: 6.8rem;
+
+            @media (max-width: $mobile) {
+                bottom: -45px;
+                right: 68px;
+                width: 27px;
+                height: 27px;
+            }
         }
 
     }
 
     &__snowflake {
         margin: 0 0 10rem;
+
+        @media (max-width: $mobile) {
+            width: 20px;
+            height: 20px;
+            margin: 0 0 15px;
+        }
     }
 
     &__content {
@@ -57,7 +140,6 @@
         align-items: center;
         position: relative;
         z-index: 2;
-        opacity: 0;
     }
 
     &__text {
@@ -66,5 +148,12 @@
         text-transform: uppercase;
         text-align: center;
         margin: 0 0 6rem;
+        max-width: 88%;
+
+        @media(max-width: $mobile) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin: 0 0 26px;
+        }
     }
 }

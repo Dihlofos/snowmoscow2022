@@ -18,4 +18,8 @@
     &:active {
         background-color: $yellow;
     }
+
+    @media(max-width: $mobile) {
+        width: 100%;
+    }
 }

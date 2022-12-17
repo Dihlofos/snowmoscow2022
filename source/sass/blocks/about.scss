@@ -3,27 +3,46 @@
     background-color: $blue;
     border-radius: 20px;
 
+    @media (min-width: $tablet) {
+        .js-anim-title,
+        .js-anim-content,
+        .js-anim-plank {
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 38px 0 40px;
+    }
+
     .container {
         position: relative;
     }
 
-    &__title {
-        opacity: 0;
-    }
+
+
 
     &__content {
         display: flex;
         gap: 40px;
         align-items: flex-start;
+
+        @media (max-width: $mobile) {
+            flex-direction: column-reverse;
+            gap: 0
+        }
     }
 
     &__image {
-        opacity: 0;
         border-radius: 25px;
+        max-width: 68rem;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
     }
 
     &__text {
-        opacity: 0;
         width: 36.1%;
 
         h3 {
@@ -32,17 +51,32 @@
             margin: 0 0 2rem;
             font-weight: 500;
             text-transform: uppercase;
+
+            @media (max-width: $mobile) {
+                text-transform: none;
+                line-height: 20px;
+                line-height: 24px;
+                margin: 0 0 15px;
+            }
         }
 
         p {
             font-size: 2rem;
             line-height: 2.4rem;
             margin: 0 0 2rem;
+
+            @media (max-width: $mobile) {
+                line-height: 14px;
+                line-height: 16px;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
         }
     }
 
     &__plank {
-        opacity: 0;
         bottom: -17.4rem;
         right: 4rem;
         position: absolute;

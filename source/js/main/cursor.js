@@ -3,6 +3,17 @@
     const cursor = document.querySelector(".js-cursor");
     var a = document.querySelectorAll('a');
     var button = document.querySelectorAll('button');
+    if (!isTouchDevice()) {
+        cursor.style.display = 'block';
+    } else {
+        return;
+    }
+
+    function isTouchDevice() {
+        return (('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0));
+    }
 
     const moveCursor = (e)=> {
         const mouseY = e.clientY - 30;

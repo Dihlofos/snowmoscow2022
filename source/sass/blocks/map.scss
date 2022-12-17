@@ -4,9 +4,10 @@
     .container {
         position: relative;
     }
-
-    .js-anim-bottom {
-        opacity: 0;
+    @media (min-width: $tablet) {
+        .js-anim-bottom {
+            opacity: 0;
+        }
     }
 
 
@@ -42,11 +43,15 @@
         &--blue {
             top: -15.3rem;
             left: -35.9rem;
+            width: 83.3rem;
+            height: 73.2rem;
         }
 
         &--white {
             bottom: -6.3rem;
             right: -12rem;
+            width: 32rem;
+            height: 24.3rem;
         }
     }
 

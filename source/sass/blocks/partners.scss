@@ -1,12 +1,6 @@
 .partners {
     padding: 9rem 0 14.5rem;
 
-    .js-anim-bottom,
-    .js-anim-right,
-    .js-anim-left {
-        opacity:0;
-    }
-
     &__block {
         display: flex;
         justify-content: space-between;

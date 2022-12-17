@@ -2,15 +2,27 @@
   position: relative;
   padding: 0 0 10rem;
 
+  @media(max-width:$mobile) {
+    padding: 30px 0 30px;
+  }
+
   &__logo {
     position: relative;
     margin: 2.8rem 0 0;
     z-index: 5;
 
+    @media(max-width:$mobile) {
+      margin: 0;
+    }
+
   }
 
   &__hero {
     margin-top: -4.5rem;
+
+    @media(max-width:$mobile) {
+      margin-top: -6px;
+    }
   }
 
 
