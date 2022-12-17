@@ -19,7 +19,6 @@
     triggerElement: "#about",
   })
     .setClassToggle("#about .js-anim-title", "fromBottom")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -27,7 +26,6 @@
     triggerElement: "#about .js-anim-content",
   })
     .setClassToggle("#about .js-anim-content", "fromLeft")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -36,7 +34,6 @@
     triggerElement: "#about .js-anim-plank",
   })
     .setClassToggle("#about .js-anim-plank", "fadeIn")
-    .addIndicators()
     .addTo(controller);
 
   const parallaxEase = 'slow'
@@ -48,7 +45,6 @@
     triggerElement: "#info",
   })
     .setClassToggle("#info .js-anim", "fromBottom")
-    .addIndicators()
     .addTo(controller);
 
   // Info parallax
@@ -67,7 +63,6 @@
     // build scene
   new ScrollMagic.Scene({triggerElement: "#info", triggerHook: "onEnter", duration: 1700, offset: 450})
     .setTween(infoParallaxTween)
-    .addIndicators()
     .addTo(controller);
 
   // Location appearence
@@ -77,7 +72,6 @@
     triggerElement: "#location",
   })
     .setClassToggle("#location .js-title", "fromBottom")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -86,7 +80,6 @@
     triggerElement: "#location",
   })
     .setClassToggle("#location .js-nav", "fadeIn")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -95,7 +88,6 @@
     triggerElement: "#location .js-slider" ,
   })
     .setClassToggle("#location .swiper-slide", "fromLeft")
-    .addIndicators()
     .addTo(controller);
 
   // location parallax
@@ -107,7 +99,6 @@
     // build scene
   new ScrollMagic.Scene({triggerElement: "#location", triggerHook: "onEnter", duration: 1700, offset: 450})
     .setTween(locationParallaxTween)
-    .addIndicators()
     .addTo(controller);
 
   // Artzone parallax
@@ -120,7 +111,6 @@
     // build scene
   new ScrollMagic.Scene({triggerElement: "#artzone", triggerHook: "onEnter", duration: 1700, offset: 600})
     .setTween(artzoneParallaxTween)
-    .addIndicators()
     .addTo(controller);
 
   // artzone appearence
@@ -130,7 +120,6 @@
     triggerElement: "#artzone",
   })
     .setClassToggle("#artzone .js-anim-bottom", "fromBottom")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -139,7 +128,6 @@
     triggerElement: "#artzone .artzone__create",
   })
     .setClassToggle("#artzone .js-anim-scale", "fromScale")
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -148,7 +136,6 @@
     triggerElement: "#artzone .artzone__visit",
   })
     .setClassToggle("#artzone .js-anim-scale-visit", "fromScale")
-    .addIndicators()
     .addTo(controller);
 
 
@@ -162,7 +149,6 @@
     // build scene
   new ScrollMagic.Scene({triggerElement: "#map", triggerHook: "onEnter", duration: 1700, offset: 600})
     .setTween(mapParallaxTween)
-    .addIndicators()
     .addTo(controller);
 
   // Map appearence
@@ -172,45 +158,40 @@
     triggerElement: "#map",
   })
     .setClassToggle("#map .js-anim-bottom", "fromBottom")
-    .addIndicators()
     .addTo(controller);
 
-  // Calendar appearence
-  new ScrollMagic.Scene({
-    ...commonOptions,
-    offset: 500,
-    triggerElement: "#calendar",
-  })
-    .setClassToggle("#calendar .js-anim-bottom", "fromBottom")
-    .addIndicators()
-    .addTo(controller);
+  // // Calendar appearence
+  // new ScrollMagic.Scene({
+  //   ...commonOptions,
+  //   offset: 500,
+  //   triggerElement: "#calendar",
+  // })
+  //   .setClassToggle("#calendar .js-anim-bottom", "fromBottom")
+  //   .addTo(controller);
 
-  new ScrollMagic.Scene({
-    ...commonOptions,
-    offset: 500,
-    triggerElement: "#calendar",
-  })
-    .setClassToggle("#calendar .js-calendar", "fromDeepRight")
-    .addIndicators()
-    .addTo(controller);
+  // new ScrollMagic.Scene({
+  //   ...commonOptions,
+  //   offset: 500,
+  //   triggerElement: "#calendar",
+  // })
+  //   .setClassToggle("#calendar .js-calendar", "fromDeepRight")
+  //   .addTo(controller);
 
   // Faq appearence
-  new ScrollMagic.Scene({
-    ...commonOptions,
-    offset: 500,
-    triggerElement: "#faq",
-  })
-    .setClassToggle("#faq .js-anim-bottom", "fromBottom")
-    .addIndicators()
-    .addTo(controller);
+  // new ScrollMagic.Scene({
+  //   ...commonOptions,
+  //   offset: 500,
+  //   triggerElement: "#faq",
+  // })
+  //   .setClassToggle("#faq .js-anim-bottom", "fromBottom")
+  //   .addTo(controller);
 
-  new ScrollMagic.Scene({
-    ...commonOptions,
-    triggerElement: "#faq .js-anim-right",
-  })
-    .setClassToggle("#faq .js-anim-right", "fromRight")
-    .addIndicators()
-    .addTo(controller);
+  // new ScrollMagic.Scene({
+  //   ...commonOptions,
+  //   triggerElement: "#faq .js-anim-right",
+  // })
+  //   .setClassToggle("#faq .js-anim-right", "fromRight")
+  //   .addTo(controller);
 
     // partners parallax
     const footerHeight = document.getElementById('contacts').clientHeight;
@@ -219,39 +200,38 @@
 
     const snowflakesParallaxTween = new TimelineMax ()
       .add([
-        TweenMax.to("#partners .js-anim-snowflake", 1, { rotation: 360,  ease: 'power1'}),
+        TweenMax.to("#partners .js-anim-snowflake", 1, { rotation: 180,  ease: 'power1'}),
       ]);
       // build scene
       new ScrollMagic.Scene({triggerElement: "#partners", triggerHook: "onEnter", duration: parallaxDuration, offset: 0})
       .setTween(snowflakesParallaxTween)
-      .addIndicators('partners parallax')
       .addTo(controller);
 
 
     // partners appearence
-    new ScrollMagic.Scene({
-      ...commonOptions,
-      triggerElement: "#partners",
-    })
-      .setClassToggle("#partners .js-anim-bottom", "fromBottom")
-      .addIndicators()
-      .addTo(controller);
+    // new ScrollMagic.Scene({
+    //   ...commonOptions,
+    //   triggerElement: "#partners",
+    // })
+    //   .setClassToggle("#partners .js-anim-bottom", "fromBottom")
 
-    new ScrollMagic.Scene({
-      ...commonOptions,
-      triggerElement: "#partners .js-anim-right",
-    })
-      .setClassToggle("#partners .js-anim-right", "fromRight")
-      .addIndicators()
-      .addTo(controller);
+    //   .addTo(controller);
 
-    new ScrollMagic.Scene({
-      ...commonOptions,
-      triggerElement: "#partners .js-anim-left",
-    })
-      .setClassToggle("#partners .js-anim-left", "fromLeft")
-      .addIndicators()
-      .addTo(controller);
+    // new ScrollMagic.Scene({
+    //   ...commonOptions,
+    //   triggerElement: "#partners .js-anim-right",
+    // })
+    //   .setClassToggle("#partners .js-anim-right", "fromRight")
+
+    //   .addTo(controller);
+
+    // new ScrollMagic.Scene({
+    //   ...commonOptions,
+    //   triggerElement: "#partners .js-anim-left",
+    // })
+    //   .setClassToggle("#partners .js-anim-left", "fromLeft")
+
+    //   .addTo(controller);
 
 
     // Footer appearence
@@ -260,7 +240,7 @@
       triggerElement: "#contacts",
     })
       .setClassToggle("#contacts .js-anim-bottom", "wholeFromBottom")
-      .addIndicators()
+
       .addTo(controller);
 
 
