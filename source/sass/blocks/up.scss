@@ -1,0 +1,24 @@
+.up {
+    position: fixed;
+    z-index: 10;
+    color: $white;
+    bottom: 5rem;
+    right: 9.3rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+
+    &--shown {
+      display: flex;
+    }
+
+    & svg {
+      transition: 0.3s ease-in-out;
+      transform: rotate(270deg);
+    }
+
+    &:hover {
+      color: $pink;
+    }
+
+  }
