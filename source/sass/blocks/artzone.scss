@@ -1,9 +1,14 @@
 .artzone {
     padding: 10rem 0 0;
 
+
     .container {
         position: relative;
     }
+    @media (max-width: $mobile) {
+      padding: 12px 0px 0;
+    }
+
     @media (min-width: $tablet) {
         .js-anim-bottom,
         .js-anim-scale,
@@ -12,10 +17,20 @@
         }
     }
 
+    &__title {
+      @media (max-width: $mobile) {
+        margin: 0 0 30px;
+      }
+    }
+
 
     &__ornament {
         position: absolute;
         z-index: 0;
+
+        @media (max-width: $mobile) {
+          display: none;
+        }
 
         &--flakes {
             top: 18.4rem;
@@ -39,14 +54,31 @@
         }
     }
 
-    &__wrapper {
+    &__mobile-ornament {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
 
+      @media (max-width: $mobile) {
+        display: block;
+
+      }
+    }
+
+    &__wrapper {
         position: relative;
         z-index: 1;
     }
 
     &__title {
         width: 50%;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
     }
 
     &__header {
@@ -58,11 +90,21 @@
     &__header-content {
         width: 48.5%;
 
+        @media (max-width: $mobile) {
+          width: 100%;
+          margin: 0px 0 39px;
+        }
+
         p {
             font-size: 2rem;
             line-height: 2.4rem;
             margin: 0 0 4rem;
             max-width: 40.4rem;
+
+            @media (max-width: $mobile) {
+              margin: 0 0 25px;
+              max-width: 100%;
+            }
         }
     }
 
@@ -73,36 +115,78 @@
         text-transform: uppercase;
         font-weight: 500;
 
+        @media (max-width: $mobile) {
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: none;
+          margin: 0 0 10px;
+        }
+
         &--question {
             margin: -3rem 0 0;
+
+            @media (max-width: $mobile) {
+              margin: 0;
+              text-transform: uppercase;
+            }
         }
     }
 
     &__content {
+        position: relative;
         padding: 10.5rem 0 0;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
+
+        @media (max-width: $mobile) {
+          padding: 33px 0 0;
+          max-width: 475px;
+          margin: 0 auto;
+        }
     }
 
     &__create {
         width: 46.3%;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
     }
 
     &__visit {
         width: 53.7%;
         margin: -2.8rem 0 0;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
     }
 
     &__learn {
         margin: -6rem 8rem 0 0;
+
+        @media (max-width: $mobile) {
+
+          width: 100%;
+          margin: 0;
+        }
     }
 
     &__circle {
+        position: relative;
         border-radius: 50%;
         text-align: center;
         color: $darkblue;
         padding: 11.2rem 7.6rem 0;
+        z-index: 2;
+
+        @media (max-width: $mobile) {
+          padding: 37px 27px 0;
+        }
 
         h6 {
             font-size: 2.5rem;
@@ -110,6 +194,12 @@
             font-weight: 700;
             margin: 0 0 1.5rem;
             text-transform: uppercase;
+
+            @media (max-width: $mobile) {
+              font-size: 16px;
+              line-height: 1.2;
+              margin: 0 0 4px;
+            }
         }
 
         p {
@@ -118,12 +208,22 @@
             font-weight: 500;
             margin: 0 0 1.4rem;
 
+            @media (max-width: $mobile) {
+              font-size: 12px;
+              line-height: 14px;
+            }
+
         }
 
         span {
             display: block;
             font-size: 1.4rem;
             line-height: 1.9rem;
+
+            @media (max-width: $mobile) {
+              font-size: 10px;
+              line-height: 1.2;
+            }
         }
 
         &--create {
@@ -131,13 +231,26 @@
             height: 45rem;
             background-color: $yellow;
             padding: 10.4rem 7.6rem 0;
+
+            @media (max-width: $mobile) {
+              width: 193px;
+              height: 193px;
+              padding: 37px 27px 0;
+            }
         }
 
         &--visit {
             width: 41.4rem;
             height: 41.4rem;
             background-color: $pink;
-            color: $white
+            color: $white;
+
+            @media (max-width: $mobile) {
+              width: 177px;
+              height: 177px;
+              padding: 41px 22px 0;
+              margin: -51px 0 0;
+            }
         }
 
         &--learn {
@@ -145,6 +258,13 @@
             height: 38.2rem;
             padding: 10.2rem 4.2rem 0;
             background-color: $lighterBlue;
+
+            @media (max-width: $mobile) {
+              width: 164px;
+              height: 164px;
+              padding: 41px 22px 0;
+              margin: -67px 0 0;
+            }
         }
 
     }

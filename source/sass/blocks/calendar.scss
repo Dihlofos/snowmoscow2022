@@ -3,14 +3,35 @@
   background-color: $blue;
   border-radius: 20px;
 
+  @media (max-width: $mobile) {
+    padding: 40px 0 32px;
+    border-radius: 15px;
+  }
+
   &__description {
     width: 35%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 0 0 28px;
+    }
   }
 
   &__text {
     margin: 0 0 5rem;
     font-size: 2rem;
     line-height: 1.2;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      margin: 0 0 11px;
+
+      p {
+        margin: 0 0 10px;
+      }
+    }
+
+
   }
 
   &__subtitle {
@@ -19,23 +40,52 @@
     text-transform: uppercase;
     font-weight: 500;
 
+    @media (max-width: $mobile) {
+      text-transform: none;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
     span {
       color: $yellow;
+
+      @media (max-width: $mobile) {
+        text-transform: uppercase;
+      }
     }
   }
 
   &__body {
     width: 52%;
     margin: 0 -1.5%;
+
+    @media (max-width: $mobile) {
+      width: auto;
+      margin: 0 -12px;
+      max-width: 450px;
+    }
   }
 
   &__title {
     margin: 0 0 6rem;
+
+    @media (max-width: $mobile) {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 33px;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
 
@@ -45,6 +95,10 @@
     justify-content: space-between;
     margin: 0 0 4.1rem;
     padding: 0 3rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 24px;
+    }
 
   }
 
@@ -60,6 +114,13 @@
       font-size: 24px;
       line-height: 28px;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+
   }
 
   &__arrow {
@@ -68,6 +129,13 @@
     cursor: pointer;
     color: $white;
     transition: color 0.1s ease;
+
+    @media (max-width: $mobile) {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
 
     &:hover {
       color: $pink;
@@ -87,6 +155,10 @@
     display: flex;
     width: 100%;
     margin: 0 0 4.1rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 15px;
+    }
   }
 
   &__header-cell {
@@ -95,6 +167,11 @@
     color: $white;
     font-size: 2.2rem;
     line-height: 2.6rem;
+
+    @media (max-width: $mobile) {
+      font-size: 11px;
+      line-height: 13px;
+    }
   }
 
   &__table {
@@ -103,7 +180,6 @@
   }
 
   &__cell {
-
     font-size: 2.2rem;
     line-height: 2.6rem;
     padding: 1rem 0;
@@ -113,6 +189,12 @@
     text-align: center;
     flex-grow: 0;
     width: calc(100% / 7);
+
+    @media (max-width: $mobile) {
+      font-size: 11px;
+      line-height: 13px;
+      padding: 0;
+    }
 
     &:hover {
       a {
@@ -158,6 +240,10 @@
       height: 100%;
       padding: 1rem 0;
       transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+      @media (max-width: $mobile) {
+        padding: 10px 0;
+      }
     }
 
 

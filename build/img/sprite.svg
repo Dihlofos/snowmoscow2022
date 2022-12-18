@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 35 35">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-small" viewBox="0 0 7 11">
+<path d="M1 1L6 5.72222L0.999999 10.4444" stroke="white"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 35 35">
 <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="white"/>
 <circle cx="17.5" cy="17.5" r="17" stroke="white"/>
 </symbol><symbol id="icon-dates" viewBox="0 0 25 25">

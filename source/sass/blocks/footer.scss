@@ -6,6 +6,7 @@
     .container {
         position: relative;
     }
+
     @media (min-width: $tablet) {
         .js-anim-bottom {
             opacity: 0;
@@ -18,6 +19,10 @@
         background-color: $blue;
         border-radius: 20px 20px 0px 0px;
 
+        @media (max-width: $mobile) {
+          padding: 40px 0 23px;
+        }
+
     }
 
     &__ornament {
@@ -28,22 +33,30 @@
         max-width: initial;
         width: 155.3rem;
         height: 39.6rem;
-    }
 
-    &__contacts-item {
-        color: white;
+        @media (max-width: $mobile) {
+          display: none;
+        }
     }
 
     &__content {
         position: relative;
         z-index: 2;
         display: flex;
+
+        @media (max-width: $mobile) {
+          flex-direction: column-reverse;
+        }
     }
 
     &__contacts {
         list-style: none;
         padding: 0;
         margin: 0 0 14.8rem;
+
+        @media (max-width: $mobile) {
+          margin: 0 0 37px;
+        }
     }
 
     &__contacts-item {
@@ -53,8 +66,15 @@
         font-size: 2rem;
         line-height: 1.2;
         font-weight: 400;
+        color: $white;
+
         p {
             margin: 0;
+        }
+
+        @media (max-width: $mobile) {
+          gap: 16px;
+          margin: 0 0 9px;
         }
     }
 
@@ -62,6 +82,10 @@
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.2;
+
+        @media (max-width: $mobile) {
+          opacity: 0.6;
+        }
     }
 
     &__contacts-item-icon {
@@ -72,10 +96,19 @@
 
     &__left {
         width: 51.5%;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
     }
 
     &__right {
         width: 48.5%;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+          margin: 0 0 27px;
+        }
     }
 
     &__subs {
@@ -84,6 +117,12 @@
         line-height: 3.7rem;
         text-transform: uppercase;
         margin: 0 0 5rem;
+
+        @media (max-width: $mobile) {
+          font-size: 20px;
+          line-height: 24px;
+          margin: 0 0 31px;
+        }
     }
 
     &__telegram-link {
@@ -93,6 +132,14 @@
 
         &:hover {
             color: $pink;
+        }
+
+        @media (max-width: $mobile) {
+          svg {
+            width: 60px;
+            height: 60px;
+          }
+
         }
     }
 

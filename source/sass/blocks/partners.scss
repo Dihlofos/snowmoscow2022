@@ -1,6 +1,39 @@
 .partners {
     padding: 9rem 0 14.5rem;
 
+    .container {
+      @media (max-width: $mobile) {
+        padding: 0;
+      }
+
+    }
+
+    @media (max-width: $mobile) {
+      padding: 29px 0 5px;
+    }
+
+    &__title {
+      svg {
+        display: none;
+      }
+
+      @media (max-width: $mobile) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        padding: 0 20px;
+        margin: 0 0 30px;
+
+        svg {
+          display: block;
+          margin: 9px 0 0;
+        }
+      }
+    }
+
     &__block {
         display: flex;
         justify-content: space-between;
@@ -10,7 +43,22 @@
         &--reverse {
             flex-direction: row-reverse;
             margin: 2.9rem 0 0;
+
+            @media (max-width: $mobile) {
+              margin: 0;
+            }
         }
+
+
+    }
+
+    &__blocks {
+      @media (max-width: $mobile) {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        padding: 0 20px 0 20px;
+      }
     }
 
     &__circles {
@@ -29,6 +77,10 @@
         &--reverse {
             margin: 0rem 0 2.5rem 12.7rem;
         }
+
+        @media (max-width: $mobile) {
+          display: none;
+        }
     }
 
     &__partner {
@@ -39,6 +91,11 @@
         height: 22.7rem;
         border-radius: 50%;
         border: 1px solid $white;
+
+        @media (max-width: $mobile) {
+          width: 112px;
+          height: 112px;
+        }
 
         img {
             max-width: 80%;

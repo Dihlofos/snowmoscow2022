@@ -2,8 +2,19 @@
   position: relative;
   padding: 20rem 0 8.2rem;
 
+  @media (max-width: $mobile) {
+    padding: 79px 0 30px;
+  }
+
   &__title {
     margin: 0 0 6rem;
+
+    @media (max-width: $mobile) {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 30px;
+    }
   }
 
   &__item {
@@ -14,7 +25,15 @@
 
     &:first-child {
       border-top: 1px solid $white;
-      padding: 3rem 0 3rem;
+      padding: 3rem 0;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 0 20px;
+
+      &:first-child {
+        padding: 20px 0 20px;
+      }
     }
   }
 
@@ -33,9 +52,22 @@
     cursor: pointer;
     padding: 0;
 
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 19px;
+      align-items: flex-start;
+    }
+
     svg {
       transition: transform 0.3s ease;
       transform: rotate(90deg);
+      flex-shrink: 0;
+
+      @media (max-width: $mobile) {
+        width: 15px;
+        height: 15px;
+        margin: 0 0 0 27px;
+      }
     }
 
     &.active {

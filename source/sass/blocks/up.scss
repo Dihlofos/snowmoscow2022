@@ -7,6 +7,7 @@
     width: 3.3rem;
     height: 3.3rem;
     cursor: pointer;
+    display: none;
 
     &--shown {
       display: flex;
@@ -19,6 +20,19 @@
 
     &:hover {
       color: $pink;
+    }
+
+    @media (max-width: $mobile) {
+      bottom: 30px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        color: $white;
+        width: 30px;
+        height: 30px;
+      }
     }
 
   }

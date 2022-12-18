@@ -2,6 +2,10 @@
     position: relative;
     padding: 19.7rem 0 10rem;
 
+    @media (max-width: $mobile) {
+      padding: 90px 0 100px;
+    }
+
     .container {
         position: relative;
     }
@@ -12,6 +16,12 @@
         .swiper-slide {
             opacity: 0;
         }
+    }
+
+    &__title {
+      @media (max-width: $mobile) {
+        margin: 0 0 30px;
+      }
     }
 
 
@@ -39,11 +49,16 @@
         display: flex;
         justify-content: space-between;
     }
+
     .swiper__nav {
         position: relative;
         display: flex;
         gap: 1rem;
         z-index: 1;
+
+        @media (max-width: $mobile) {
+          display: none;
+        }
     }
 
     .swiper__control {
@@ -72,6 +87,32 @@
 
     .swiper__prev {
       transform: rotate(180deg);
+    }
+
+    &__pagination {
+      display: none;
+      margin: 0 0 -47px -11px;
+
+      .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        margin: 0 5px !important;
+        opacity: 0.5;
+        background-color: $white;
+
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+
+
+
+
     }
 
 }
