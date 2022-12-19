@@ -12,8 +12,37 @@
     margin: 0;
     border: none;
 
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0.5rem;
+      left: 0.5rem;
+      width: 4rem;
+      height: 4rem;
+      background: #FCF5CB;
+      border-radius: 50%;
+      animation-name: map-pulse;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      z-index: 1;
+    }
+
+    &.open {
+      &:after {
+        display: none;
+      }
+    }
+
     @media (max-width: $mobile) {
       height: 20px;
+
+      &:after {
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &--1 {
@@ -136,7 +165,6 @@
     align-items: center;
     padding: 0 3.1rem 0 6rem;
     font-size: 1.4rem;
-    line-height: 1.2;
     white-space: nowrap;
     height: 5rem;
     border-radius: 50px;
@@ -178,6 +206,7 @@
       opacity: 0;
       transition: opacity 0.1s ease-in;
       transition-delay: 0.3s;
+      line-height: 1;
 
     }
 

@@ -3,7 +3,7 @@
   // init controller
   const controller = new ScrollMagic.Controller();
   const vw = window.innerWidth;
-  const offset = vw > 767 ? 300 : 150;
+  const offset = vw > 767 ? 150 : 150;
 
   if (vw > 1023) {
     initAnimationsDesktop();
@@ -56,7 +56,7 @@
     // Info appearence
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 600,
+      offset: 300,
       triggerElement: "#info",
     })
       .setClassToggle("#info .js-anim", "fromBottom")
@@ -86,7 +86,7 @@
     // Location appearence
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 500,
+      offset: 300,
       triggerElement: "#location",
     })
       .setClassToggle("#location .js-title", "fromBottom")
@@ -94,7 +94,7 @@
 
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 500,
+      offset: 300,
       triggerElement: "#location",
     })
       .setClassToggle("#location .js-nav", "fadeIn")
@@ -102,7 +102,7 @@
 
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 400,
+      offset: 200,
       triggerElement: "#location .js-slider" ,
     })
       .setClassToggle("#location .swiper-slide", "fromLeft")
@@ -134,7 +134,7 @@
     // artzone appearence
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 400,
+      offset: 200,
       triggerElement: "#artzone",
     })
       .setClassToggle("#artzone .js-anim-bottom", "fromBottom")
@@ -142,7 +142,7 @@
 
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 400,
+      offset: 200,
       triggerElement: "#artzone .artzone__create",
     })
       .setClassToggle("#artzone .js-anim-scale", "fromScale")
@@ -150,7 +150,7 @@
 
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 500,
+      offset: 250,
       triggerElement: "#artzone .artzone__visit",
     })
       .setClassToggle("#artzone .js-anim-scale-visit", "fromScale")
@@ -172,7 +172,7 @@
     // Map appearence
     new ScrollMagic.Scene({
       ...commonOptions,
-      offset: 500,
+      offset: 250,
       triggerElement: "#map",
     })
       .setClassToggle("#map .js-anim-bottom", "fromBottom")
@@ -935,8 +935,30 @@
   const vw = window.innerWidth;
 
   pins.forEach((pin)=>{
-    pin.addEventListener('click', () => {
-      pin.classList.toggle('open');
+    if (!isTouchDevice()) {
+      pin.addEventListener('mouseover', () => {
+        toggleOpen(pin);
+      })
+
+      pin.addEventListener('mouseout', () => {
+        pin.classList.toggle('open');
+      })
+    } else {
+      pin.addEventListener('click', () => {
+        toggleOpen(pin);
+      })
+    }
+
+  })
+
+  function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+        (navigator.maxTouchPoints > 0) ||
+        (navigator.msMaxTouchPoints > 0));
+  }
+
+  function toggleOpen(pin)  {
+    pin.classList.toggle('open');
 
       if (pin.dataset.pin === '4' && vw < 768) {
         const pin6 = document.querySelector('[data-pin="6"]');
@@ -944,8 +966,7 @@
           pin6.classList.remove('open')
         }
       }
-    })
-  })
+    }
 
 
 })();
@@ -1006,7 +1027,7 @@
       },
 
       1025: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 40,
       },
     },

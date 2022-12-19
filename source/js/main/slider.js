@@ -24,7 +24,7 @@
       },
 
       1025: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 40,
       },
     },

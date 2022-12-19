@@ -17,6 +17,10 @@
         height:  45.8rem !important;
         perspective: 1000px;
 
+        &:last-child {
+          margin-right: 6rem !important;
+        }
+
       img {
         object-fit: cover;
       }
