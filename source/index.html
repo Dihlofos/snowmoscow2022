@@ -399,22 +399,82 @@
           </div>
         </section>
 
-        <section class="map" id="map">
+        <section class="map-section" id="map">
           <div class="container">
-            <img src="img/map-ornament-blue.svg" alt="Карта орнамент" class="map__ornament map__ornament--blue js-anim-blue" width="833" height="832">
-            <img src="img/map-ornament-white.svg" alt="Карта орнамент" class="map__ornament map__ornament--white js-anim-white" width="320" height="243">
-            <div class="map__content">
-              <div class="map__header">
-                <h2 class="map__title title js-anim-bottom">Карта фестиваля</h2>
-                <div class="map__location js-anim-bottom" style="animation-delay: 0.2s;">
+            <img src="img/map-ornament-blue.svg" alt="Карта орнамент" class="map-section__ornament map-section__ornament--blue js-anim-blue" width="833" height="832">
+            <img src="img/map-ornament-white.svg" alt="Карта орнамент" class="map-section__ornament map-section__ornament--white js-anim-white" width="320" height="243">
+            <div class="map-section__content">
+              <div class="map-section__header">
+                <h2 class="map-section__title title js-anim-bottom">Карта фестиваля</h2>
+                <div class="map-section__location js-anim-bottom" style="animation-delay: 0.2s;">
                   <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 10C8.55 10 9.021 9.804 9.413 9.412C9.80433 9.02067 10 8.55 10 8C10 7.45 9.80433 6.979 9.413 6.587C9.021 6.19567 8.55 6 8 6C7.45 6 6.97933 6.19567 6.588 6.587C6.196 6.979 6 7.45 6 8C6 8.55 6.196 9.02067 6.588 9.412C6.97933 9.804 7.45 10 8 10ZM8 20C5.31667 17.7167 3.31267 15.5957 1.988 13.637C0.662667 11.679 0 9.86667 0 8.2C0 5.7 0.804333 3.70833 2.413 2.225C4.021 0.741667 5.88333 0 8 0C10.1167 0 11.979 0.741667 13.587 2.225C15.1957 3.70833 16 5.7 16 8.2C16 9.86667 15.3377 11.679 14.013 13.637C12.6877 15.5957 10.6833 17.7167 8 20Z" fill="#fff"/>
                   </svg>
                   Парк искусств «Музеон»
                 </div>
               </div>
-              <div class="map__map js-anim-bottom" style="animation-delay: 0.4s;">
-                <img src="img/map-bg.jpg" alt="Карта заглушка" width="1400" height="640">
+              <div class="map map-section__map js-anim-bottom" style="animation-delay: 0.4s;">
+                <!-- <img src="img/map-bg.jpg" alt="Карта заглушка" width="1400" height="640"> -->
+
+                <picture  class="map map-section__map js-anim-bottom" >
+                  <source media="(max-width: 767px)" srcset="img/map-bg-mobile.jpg" />
+                  <source media="(min-width: 768px)" srcset="img/map-bg.jpg" />
+                  <img src="img/map-bg.jpg" alt="Карта заглушка" />
+                </picture>
+                <button class="map__pin map__pin--9 js-pin" data-pin="9">
+                  <span class="map__number">9</span>
+                  <div class="map__content">
+                    <span>СКУЛЬПТУРЫ СНЕГ/ЛЕД</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--1 js-pin" data-pin="1">
+                  <span class="map__number">1</span>
+                  <div class="map__content">
+                    <span>ВХОДНАЯ ГРУППА «ЗАЯЦ»</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--2 js-pin" data-pin="2">
+                  <span class="map__number">2</span>
+                  <div class="map__content">
+                    <span>ВХОДНАЯ ГРУППА</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--3 js-pin" data-pin="3">
+                  <span class="map__number">3</span>
+                  <div class="map__content">
+                    <span>АЛЛЕЯ ВЕЛИКИХ ЛЮДЕЙ</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--4 js-pin" data-pin="4">
+                  <span class="map__number">4</span>
+                  <div class="map__content">
+                    <span>ЗОНА СВОБОДНОГО ТВОРЧЕСТВА</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--5 js-pin" data-pin="5">
+                  <span class="map__number">5</span>
+                  <div class="map__content">
+                    <span>ЗАПАД ВОСТОК</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--6 js-pin" data-pin="6">
+                  <span class="map__number">6</span>
+                  <div class="map__content">
+                    <span>ЗАМОК ЧУДЕС</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--7 js-pin" data-pin="7">
+                  <span class="map__number">7</span>
+                  <div class="map__content">
+                    <span>ЛАБИРИНТ ИСКУССТВ</span>
+                  </div>
+                </button>
+                <button class="map__pin map__pin--8 js-pin" data-pin="8">
+                  <span class="map__number">8</span>
+                  <div class="map__content">
+                    <span>СКУЛЬПТУРЫ СНЕГ/ЛЕД</span>
+                  </div>
+                </button>
               </div>
             </div>
           </div>

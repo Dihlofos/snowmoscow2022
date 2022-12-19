@@ -1,103 +1,192 @@
 .map {
-    padding: 14.8rem 0 19.2rem;
+  position: relative;
 
-    .container {
-        position: relative;
+  &__pin {
+    position: absolute;
+    height: 5rem;
+    width: auto;
+    color: $darkblue;
+    border-radius: 50px;
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    @media (max-width: $mobile) {
+      height: 20px;
     }
 
-    @media (min-width: $tablet) {
-        .js-anim-bottom {
-            opacity: 0;
-        }
+    &--1 {
+      top: 64.9%;
+      left: 6.6%;
+    }
+
+    &--2 {
+      bottom: 10.5%;
+      left: 26.6%;
+
+      @media (max-width: $mobile) {
+        bottom: 9.5%;
+        left: 35%;
+      }
+    }
+
+    &--3 {
+      bottom: 21%;
+      left: 36.7%;
+
+      @media (max-width:$mobile) {
+        bottom: 17%;
+        left: 47.7%;
+      }
+    }
+
+    &--4 {
+      bottom: 33.8%;
+      left: 48.8%;
+
+      @media (max-width: $mobile) {
+        bottom: 32.8%;
+        left: 65.8%;
+        z-index: 3;
+      }
+    }
+
+    &--5 {
+      bottom: 43.4%;
+      left: 44.8%;
+
+      @media (max-width: $mobile) {
+        bottom: 42.4%;
+        left: 58.8%;
+      }
+    }
+
+    &--6 {
+      bottom: 33.8%;
+      left: 41.3%;
+      z-index: 3;
+
+      @media (max-width: $mobile) {
+        bottom: 30.8%;
+        left: 54.3%;
+        z-index: 2;
+      }
+    }
+
+    &--7 {
+      top: 11.7%;
+      left: 33.9%;
+
+      @media (max-width: $mobile) {
+        top: 8.7%;
+        left: 44.9%;
+      }
+    }
+
+    &--8 {
+      top: 32.8%;
+      left: 52.9%;
+
+      @media (max-width: $mobile) {
+        top: 32%;
+        left: 68.9%;
+      }
+    }
+
+    &--9 {
+      top: 17.5%;
+      left: 61%;
+
+      @media (max-width: $mobile) {
+        top: 17.5%;
+        left: 80%;
+      }
+    }
+  }
+
+  &__number {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: $yellow;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3.1rem 0 6rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    height: 5rem;
+    border-radius: 50px;
+    background-color: $white;
+    z-index: 1;
+    text-transform: uppercase;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+    transform-origin: 2rem 0;
+
+    .map__pin--6 & {
+      right: 0;
+      left: auto;
+      transform-origin: 90% 2rem;
+      padding: 0 6rem 0 3.1rem;
     }
 
     @media (max-width: $mobile) {
-      padding: 80px 0px;
+      height: 20px;
+      padding: 0 10px 0 25px;
+      transform-origin: 5px 0;
+      font-size: 8px;
+      line-height: 1;
+
+      .map__pin--9 &,
+      .map__pin--4 &,
+      .map__pin--6 &
+       {
+        right: 0;
+        left: auto;
+        transform-origin: 95% 8px;
+        padding: 0 25px 0 10px;
+      }
     }
 
 
-    &__content {
-        position: relative;
-        z-index: 2;
-    }
-
-    &__title {
-        margin: 0;
-
-        @media (max-width: $mobile) {
-          font-weight: 500;
-          font-size: 30px;
-          line-height: 36px;
-          margin: 0 0 30px;
-        }
-    }
-
-    &__header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin: 0 0 6rem;
-
-        @media (max-width: $mobile) {
-          display: block;
-          margin: 0 0 15px;
-        }
-    }
-
-    &__location {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin: 0 0.5rem 0 0;
-
-        @media (max-width: $mobile) {
-          gap: 5px;
-          font-size: 12px;
-          line-height: 1.2;
-          svg  {
-            width: 8px;
-            height: 10px;
-          }
-        }
-    }
-
-    &__ornament {
-        position: absolute;
-        z-index: 0;
-
-        &--blue {
-            top: -15.3rem;
-            left: -35.9rem;
-            width: 83.3rem;
-            height: 73.2rem;
-        }
-
-        &--white {
-            bottom: -6.3rem;
-            right: -12rem;
-            width: 32rem;
-            height: 24.3rem;
-        }
-    }
-
-    &__map {
-        border-radius: 25px;
-        overflow: hidden;
-
-        @media (max-width: $mobile) {
-          height: 205px;
-          width: 100%;
-          box-shadow: 0px 3px 6px rgba(19, 53, 121, 0.58);
-          border-radius: 15px;
-
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-          }
-        }
+    span {
+      opacity: 0;
+      transition: opacity 0.1s ease-in;
+      transition-delay: 0.3s;
 
     }
+
+    .open & {
+      transform: scaleX(1);
+
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
 }
