@@ -146,6 +146,7 @@
     transform: scaleX(0);
     transition: transform 0.3s ease-in;
     transform-origin: 2rem 0;
+    line-height: 1;
 
     .map__pin--6 & {
       right: 0;
