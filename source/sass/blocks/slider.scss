@@ -18,7 +18,7 @@
         perspective: 1000px;
 
         &:last-child {
-          margin-right: 6rem !important;
+          width: calc((100% - 140rem)/2)  !important;
         }
 
       img {

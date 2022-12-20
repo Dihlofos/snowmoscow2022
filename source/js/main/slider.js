@@ -3,7 +3,7 @@
   new Swiper(".js-slider", {
     // Optional parameters
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     speed: 1000,
     pagination: {
       el: ".swiper-pagination",

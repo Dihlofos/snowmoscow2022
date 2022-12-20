@@ -105,7 +105,7 @@
       offset: 200,
       triggerElement: "#location .js-slider" ,
     })
-      .setClassToggle("#location .swiper-slide", "fromLeft")
+      .setClassToggle("#location .js-slide", "fromLeft")
       .addTo(controller);
 
     // location parallax

@@ -2,25 +2,26 @@
 (function () {
     const cursor = document.querySelector(".js-cursor");
     var a = document.querySelectorAll('a');
+    const vw = window.innerWidth;
     var button = document.querySelectorAll('button');
-    if (!isTouchDevice()) {
+
+    if (vw > 1023) {
         cursor.style.display = 'block';
     } else {
         return;
     }
 
-    function isTouchDevice() {
-        return (('ontouchstart' in window) ||
-            (navigator.maxTouchPoints > 0) ||
-            (navigator.msMaxTouchPoints > 0));
-    }
+    document.addEventListener('mousemove', () => {
+      if (cursor.style.display === 'none') {
+        cursor.style.display = 'block';
+      }
+    })
 
     const moveCursor = (e)=> {
         const mouseY = e.clientY - 30;
         const mouseX = e.clientX - 30;
 
         cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-
     }
 
 
