@@ -3,7 +3,7 @@
   const vw = window.innerWidth;
 
   pins.forEach((pin)=>{
-    if (!isTouchDevice()) {
+    if (!isTouchDevice() || vw > 1023) {
       pin.addEventListener('mouseover', () => {
         toggleOpen(pin);
       })
@@ -13,7 +13,9 @@
       })
     } else {
       pin.addEventListener('click', () => {
-        toggleOpen(pin);
+        toggleOpen(pin)
+        clearAllExcept(pin);
+
       })
     }
 
@@ -34,7 +36,17 @@
           pin6.classList.remove('open')
         }
       }
-    }
+  }
+
+  function clearAllExcept(onePin) {
+    pins.forEach((pin)=>{
+      if (onePin.dataset.pin === pin.dataset.pin) {
+        return;
+      }
+      pin.classList.remove('open')
+    })
+
+  }
 
 
 })();

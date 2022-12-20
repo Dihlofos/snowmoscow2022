@@ -22,7 +22,9 @@
     }
 
     &__title {
+        position: relative;
         margin: 0;
+
 
         @media (max-width: $mobile) {
           font-weight: 500;
@@ -83,9 +85,28 @@
         }
     }
 
-    &__map {
+    &__map-wrapper {
+      &:before {
+        display: block;
+        content: 'Наведите на цифру, чтобы увидеть название локации фестиваля.';
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: right;
+        margin: 0 0 1rem;
 
+        @media (max-width: $mobile) {
+          text-align: left;
+          content: 'Нажмите  на цифру, чтобы увидеть название локации фестиваля.';
+        }
+      }
+    }
+
+    &__map {
+      border-radius: 25px;
         img {
+          height: 100%;
+          width: 100%;
           border-radius: 25px;
         }
 
