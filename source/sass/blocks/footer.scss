@@ -139,6 +139,7 @@
     }
 
     &__copyright {
+        display: none;
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.2;
@@ -146,6 +147,15 @@
         @media (max-width: $mobile) {
           opacity: 0.6;
           font-size: 12px;
+          display: block;
+        }
+
+        &--onlydesk {
+          display: block;
+
+          @media (max-width: $mobile) {
+            display: none;
+          }
         }
     }
 
@@ -187,15 +197,19 @@
     }
 
     &__telegram-link {
+        display: block;
         color: $white;
         text-decoration: none;
         transition: 0.3s color ease;
+
+        margin: 0 0 13.4rem;
 
         &:hover {
             color: $pink;
         }
 
         @media (max-width: $mobile) {
+          margin: 0;
           svg {
             width: 60px;
             height: 60px;
