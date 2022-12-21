@@ -51,6 +51,8 @@
 
     &__smi {
       margin: 0 0 9rem;
+      max-width: 66rem;
+      padding: 0 3rem 0 0;
 
       @media (max-width: $mobile) {
         margin: 0 0 40px;
