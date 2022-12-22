@@ -38,7 +38,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5rem;
+        gap: 10.2rem;
 
         &--reverse {
             flex-direction: row-reverse;
@@ -65,8 +65,12 @@
           width: 0;
           height: 0;
           display: none;
+        }
       }
-      }
+    }
+
+    &__orgs {
+      margin: 0 0 3rem;
     }
 
     &__circles {
@@ -79,12 +83,7 @@
         flex-shrink: 1;
         display: flex;
         justify-content: space-between;
-        width: 30%;
-        margin: 0 11.7rem 0 0;
-
-        &--reverse {
-            margin: 0rem 0 2.5rem 12.7rem;
-        }
+        width: calc(100% - 45.3rem);
 
         @media (max-width: $mobile) {
           display: none;
