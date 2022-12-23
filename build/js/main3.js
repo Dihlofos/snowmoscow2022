@@ -64,7 +64,6 @@
 
     // Info parallax
     const infoHeight = document.getElementById('info').clientHeight;
-    console.log('infoHeight', infoHeight*1.4);
     const infoParallaxDuration = infoHeight*1.5;
     const infoParallaxTween = new TimelineMax ()
         .add([
@@ -281,10 +280,6 @@
       } else {
         upButton.classList.remove("up--shown");
       }
-    };
-
-    upButton.onclick = function () {
-      window.scrollTo(0, 0);
     };
   }
 })();
@@ -982,36 +977,6 @@
   }
 
 
-})();
-
-"use strict";
-(function () {
-  let burger = document.querySelector(".js-burger");
-  let nav = document.querySelector(".js-nav");
-  const { disableBodyScroll, enableBodyScroll } = bodyScrollLock;
-
-  if (burger && nav) {
-    // menu toggle
-    burger.addEventListener("click", () => {
-      if (nav.classList.contains("js-open")) {
-        disableBodyScroll(burger);
-        nav.classList.remove("js-open");
-        burger.classList.add("js-open");
-      } else {
-        enableBodyScroll(burger);
-        nav.classList.add("js-open");
-        burger.classList.remove("js-open");
-      }
-    });
-
-    // nav click
-    nav.addEventListener("click", (e) => {
-      const nav = e.currentTarget;
-      if (nav.classList.contains("js-open")) {
-        burger.click();
-      }
-    });
-  }
 })();
 
 "use strict";

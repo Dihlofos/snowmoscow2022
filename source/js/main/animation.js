@@ -64,7 +64,6 @@
 
     // Info parallax
     const infoHeight = document.getElementById('info').clientHeight;
-    console.log('infoHeight', infoHeight*1.4);
     const infoParallaxDuration = infoHeight*1.5;
     const infoParallaxTween = new TimelineMax ()
         .add([

@@ -10,9 +10,5 @@
         upButton.classList.remove("up--shown");
       }
     };
-
-    upButton.onclick = function () {
-      window.scrollTo(0, 0);
-    };
   }
 })();
