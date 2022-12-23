@@ -71,6 +71,10 @@
 
     &__orgs {
       margin: 0 0 3rem;
+
+      @media (max-width: $mobile) {
+        margin: 0;
+      }
     }
 
     &__circles {
@@ -98,6 +102,20 @@
         height: 22.7rem;
         border-radius: 50%;
         border: 1px solid $white;
+        outline: 2px solid transparent;
+        transition: border-color 0.3s ease, outline-color 0.3s ease ;
+
+        &:hover {
+          border-color: $pink;
+          outline-color: $pink;
+
+          @media (max-width: $mobile) {
+            border-color: $white;
+            outline-color: transparent;
+          }
+        }
+
+
 
         @media (max-width: $mobile) {
           width: 112px;
@@ -106,6 +124,14 @@
 
         img {
             max-width: 80%;
+        }
+
+        &--agn {
+          img {
+            max-width: 67%;
+            margin: 0 -1rem 0 0;
+          }
+
         }
     }
 }
