@@ -22,6 +22,7 @@
     const nav = header.querySelector('.js-nav').classList.add('fromTop');
     const logo = header.querySelector('.js-logo').classList.add('fromBottom');
     const announce = header.querySelector('.js-announce').classList.add('fadeIn');
+    const days = header.querySelector('.js-days').classList.add('fadeIn');
     const items = header.querySelectorAll('.js-item');
     items.forEach((item)=>{
       item.classList.add('fromBottom');

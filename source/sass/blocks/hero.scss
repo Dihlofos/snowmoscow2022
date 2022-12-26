@@ -18,6 +18,7 @@
 
     &__bg-announce {
         position: absolute;
+        z-index: 3;
         top: 5.6rem;
         left: 4.3rem;
         display: flex;
@@ -66,6 +67,57 @@
                 margin: 0;
             }
         }
+    }
+
+    &__bg-days {
+      position: absolute;
+      top: 17.3rem;
+      left: 23.6rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 50%;
+      width: 19.4rem;
+      height: 19.4rem;
+      background-color: $blue;
+      border: 1px solid $white;
+      text-align: center;
+      padding: 4.4rem 3.3rem 0;
+      z-index: 3;
+
+      h6 {
+        font-weight: 700;
+        margin: 0 0 0.5rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 0;
+      }
+
+      @media (max-width: $tablet) {
+        z-index: 2;
+        top: 18.3rem;
+        left: 12.6rem;
+      }
+
+      @media (max-width: $mobile) {
+        top: 117px;
+        left: 23px;
+        width: 111px;
+        height: 111px;
+        padding: 20px 18px 0;
+        padding: 20px 18px 0;
+        h6, p {
+          font-size: 9px;
+          line-height: 10px;
+        }
+
+
+      }
     }
 
 
