@@ -22,7 +22,6 @@
     &__content {
         display: flex;
         gap: 40px;
-        align-items: flex-start;
 
         @media (max-width: $mobile) {
             flex-direction: column-reverse;
@@ -63,9 +62,18 @@
             line-height: 2.4rem;
             margin: 0 0 2rem;
 
+            &:last-child {
+              margin: 0;
+            }
+
+
             @media (max-width: $mobile) {
                 line-height: 14px;
                 line-height: 16px;
+
+                &:last-child {
+                  margin: 0 0 2rem;
+                }
             }
         }
 
