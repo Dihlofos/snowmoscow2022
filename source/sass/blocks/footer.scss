@@ -142,24 +142,47 @@
     }
 
     &__copyright {
-        display: none;
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.2;
 
         @media (max-width: $mobile) {
-          opacity: 0.6;
           font-size: 12px;
           display: block;
         }
 
-        &--onlydesk {
-          display: block;
+    }
 
-          @media (max-width: $mobile) {
-            display: none;
-          }
+    &__subinfo {
+      display: none;
+      align-items: center;
+      gap: 3.8rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: $pink;
         }
+      }
+
+      @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        opacity: 0.6;
+      }
+
+      &--onlydesk {
+        display: flex;
+
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
+
     }
 
     &__contacts-item-icon {
