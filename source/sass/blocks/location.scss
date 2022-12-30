@@ -19,6 +19,14 @@
     }
 
     &__title {
+      margin: 0 0 10px;
+    }
+
+    &__description {
+      position: relative;
+      z-index: 4;
+      margin: 0 0 6rem;
+
       @media (max-width: $mobile) {
         margin: 0 0 30px;
       }

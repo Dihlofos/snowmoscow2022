@@ -263,6 +263,7 @@
         }
 
         &--visit {
+            padding: 14.2rem 7.6rem 0;
             width: 41.4rem;
             height: 41.4rem;
             background-color: $pink;
@@ -271,7 +272,7 @@
             @media (max-width: $mobile) {
               width: 177px;
               height: 177px;
-              padding: 41px 22px 0;
+              padding: 57px 22px 0;
               margin: -51px 0 0;
             }
         }
