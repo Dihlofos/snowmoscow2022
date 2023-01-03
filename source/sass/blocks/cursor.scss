@@ -27,6 +27,9 @@
     &.click {
         background-color: rgba(255, 255, 255, 0.63);
         backdrop-filter: blur(50px);
+    }
 
+    &.blue {
+      background-color: rgba(#2558BF, 0.13);
     }
 }

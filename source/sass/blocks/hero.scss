@@ -131,6 +131,8 @@
 
         @media (max-width: $mobile) {
             height: 335px;
+            border-radius: 15px 15px 0px 0px;
+            overflow: hidden;
         }
 
     }
@@ -149,6 +151,20 @@
             border-radius: 15px 15px 0px 0px;
             overflow: hidden;
         }
+
+        // &--mobile {
+        //   display: none;
+
+        //   @media (max-width: $mobile) {
+        //     display: block;
+        //     border-radius: 15px 15px 0px 0px;
+        //     overflow: hidden;
+        //     bottom: 0;
+        //     left: 40%;
+        //    // transform: translate(0, -50%);
+        //   }
+
+        // }
     }
 
     &__tops {
