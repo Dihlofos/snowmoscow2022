@@ -863,6 +863,7 @@
 
     if (vw > 1023) {
         cursor.style.display = 'block';
+        document.querySelector('html').classList.add('hide-cursor');
     } else {
         return;
     }
