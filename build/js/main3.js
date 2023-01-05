@@ -22,7 +22,7 @@
     const nav = header.querySelector('.js-nav').classList.add('fromTop');
     const logo = header.querySelector('.js-logo').classList.add('fromBottom');
     const announce = header.querySelector('.js-announce').classList.add('fadeIn');
-    const days = header.querySelector('.js-days').classList.add('fadeIn');
+    // const days = header.querySelector('.js-days').classList.add('fadeIn');
     const items = header.querySelectorAll('.js-item');
     items.forEach((item)=>{
       item.classList.add('fromBottom');
@@ -996,6 +996,9 @@
   const modal = document.querySelector('.js-modal');
   const modalClose = document.querySelectorAll('.js-modal-close');
 
+  if (!modalClose.length | !modal) {
+    return;
+  }
   modalClose.forEach((button) => {
     button.addEventListener('click', ()=>{
       modal.classList.add('fadeOut');
